@@ -11,7 +11,7 @@ Classification tool using Discriminative K-mers and Approximate Matching algorit
 
 - Linux operation system
 - Memory: 50 GB
-- Disk space: 120 GB
+- Disk space: 150 GB
 - Perl 5.8.5 (or up) and GCC 6.3.1 (or up).
 - Dustmasker https://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/src/app/dustmasker/. 
 
@@ -30,7 +30,7 @@ https://www.st-va.ncbi.nlm.nih.gov/bioproject/PRJNA493153
 
 **4) Installation**
 
-- First, download the package of the latest CDKAM release: https://github.com/buikiendp/CDKAM
+- First, download the package of the latest CDKAM release: https://github.com/SJTU-CGM/CDKAM
 
 - Go in the extracted sub-directory "CDKAM". 
 Then:\
