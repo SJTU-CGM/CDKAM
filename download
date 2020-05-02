@@ -1,0 +1,170 @@
+#!/usr/bin/env perl
+#
+# CDKAM: a metagenomic classification tool using discriminative k-mers and approximate matching strategy
+# Copyright 2019-2020
+# Department of Bioinformatics and Biostatistics, Shanghai Jiao Tong University
+# Contact information: buikien.dp@sjtu.edu.cn, ccwei@sjtu.edu.cn
+#
+#
+# The downloading reference genomes scripts are referred from Kraken2
+# Copyright 2013-2019, Derrick Wood <dwood@cs.jhu.edu>
+
+use strict;
+use warnings;
+use File::Basename;
+use Getopt::Long;
+
+my $PROG = basename $0;
+my $CDKAM_DIR = "#####=CDKAM_DIR=#####";
+
+# Test to see if the executables got moved, try to recover if we can
+if (! -e "$CDKAM_DIR/classify") {
+  use Cwd 'abs_path';
+  $CDKAM_DIR = dirname abs_path($0);
+}
+
+$ENV{"CDKAM_DIR"} = $CDKAM_DIR;
+$ENV{"PATH"} = "$CDKAM_DIR:$ENV{PATH}";
+
+my $DEF_THREAD_CT = 1;
+
+my @VALID_LIBRARY_TYPES = qw/archaea bacteria plasmid viral plant
+                             protozoa fungi human nr nt env_nr env_nt
+                             UniVec UniVec_Core/;
+my @VALID_SPECIAL_DB_TYPES = qw/greengenes silva rdp/;
+
+# Option/task option variables
+my (
+  $db,
+  $threads,
+  $no_masking,
+  $use_ftp,
+  $dl_library,
+  $add_to_library,
+  $standard,
+);
+
+$threads = $DEF_THREAD_CT;
+
+# variables corresponding to task options
+my @TASK_LIST = (
+  \$dl_library,
+  \$add_to_library,
+  \$standard,
+);
+
+GetOptions(
+  "help" => \&display_help,
+  "version" => \&display_version,
+  "db=s" => \$db,
+  "threads=i" => \$threads,
+  "no-masking" => \$no_masking,
+  "use-ftp" => \$use_ftp,
+  "download-library=s" => \$dl_library,
+  "add-to-library=s" => \$add_to_library,
+  "standard" => \$standard,
+) or usage();
+
+
+if (@ARGV) {
+  warn "Extra arguments on command line.\n";
+  usage();
+}
+my $task_options = scalar grep defined $$_, @TASK_LIST;
+if ($task_options > 1) {
+  warn "More than one task option selected.\n";
+  usage();
+}
+if ($task_options == 0) {
+  warn "Must select a task option.\n";
+  usage();
+}
+
+if (! defined $db) {
+  die "Must specify a database name\n";
+}
+if ($threads <= 0) {
+  die "Can't use nonpositive thread count of $threads\n";
+}
+
+
+$ENV{"CDKAM_DB_NAME"} = $db;
+$ENV{"CDKAM_THREAD_CT"} = $threads;
+$ENV{"CDKAM_MASK_LC"} = $no_masking ? "" : 1;
+$ENV{"CDKAM_USE_FTP"} = $use_ftp ? 1 : "";
+
+if (defined($dl_library)) {
+  download_library($dl_library);
+}
+elsif (defined($add_to_library)) {
+  add_to_library($add_to_library);
+}
+elsif ($standard) {
+  standard_installation();
+}
+else {
+  usage();
+}
+
+exit -1;
+# END OF MAIN CODE.
+
+sub usage {
+  my $exit_code = @_ ? shift : 64;
+  print STDERR <<EOF;
+Usage: $PROG [task option] [options]
+
+Task options (exactly one must be selected):
+  --download-library TYPE    Download partial library
+                             (TYPE = one of "archaea", "bacteria", "plasmid",
+                             "viral", "human")
+  --add-to-library FILE      Add FILE to library
+  --standard                 Download the default database
+  --help                     Print this message
+  --version                  Print version information
+
+Options:
+  --db NAME                  the name of database 
+  --threads #                Number of threads (def: $DEF_THREAD_CT)
+  --no-masking               Used with --standard/--download-library/
+                             --add-to-library to avoid masking low-complexity
+                             sequences prior to building; masking requires
+                             dustmasker or segmasker to be installed in PATH,
+                             which some users might not have.
+
+  --use-ftp                  Use FTP for downloading instead of RSYNC; used with
+                             --download-library/--download-taxonomy/--standard.
+EOF
+  exit $exit_code;
+}
+
+sub display_help {
+  usage(0);
+}
+
+sub display_version {
+  print "CDKAM metagenome sequence classification tool";
+  print "Copyright 2019-2020\n";
+  exit 0;
+}
+
+sub download_library {
+  my $type = shift;
+  if (! grep $type eq $_, @VALID_LIBRARY_TYPES) {
+    warn "Unknown library type \"$type\"\n";
+    usage();
+  }
+  exec "download_genomic_library.sh", $type;
+}
+
+sub add_to_library {
+  my $arg = shift;
+  exec "add_to_library.sh", $arg;
+}
+
+sub standard_installation {
+  exec "standard_installation.sh";
+}
+
+
+
