@@ -71,7 +71,7 @@ int main(int argc, char **argv) {
     string DTB(argv[1]);
     string namesFile = DTB + "/taxonomy/names.dmp";
     string nodesFile = DTB + "/taxonomy/nodes.dmp";
-    ifstream finNames(namesFile);
+	ifstream finNames(namesFile);
 	ifstream finNodes(nodesFile);
 	ifstream fin(argv[2]);
 	ofstream fout(argv[3]);
@@ -115,10 +115,13 @@ int main(int argc, char **argv) {
 	while (fin >> stt >> len >> taxa) {
         testSpecies[++step] = taxa;
         testGenus[step] = findGenus(taxa);
-        string ScientificName = "";
-        if (testGenus[step] != -1)
-            ScientificName = MName[testGenus[step]];
-        fout << stt << "\t" << taxa << "\t" << testGenus[step];
+        string ScientificNameGenus = "", ScientificNameSpecies = "";
+        if (testGenus[step] != -1){
+            ScientificNameGenus = MName[testGenus[step]];
+            ScientificNameSpecies = MName[taxa];
+        }
+
+        fout << stt << "\t" << testGenus[step] << "\t" << taxa;
 
         if (taxa == -1) {
             cntU++;
@@ -127,12 +130,12 @@ int main(int argc, char **argv) {
         }
         if (taxa == testGenus[step]) {
             freq[taxa]++;
-            fout << "\t (G) " << ScientificName << endl;
+            fout << "\t (G) " << ScientificNameGenus << endl;
         }
         else {
             freq[taxa]++;
             freq[testGenus[step]]++;
-            fout << "\t (S) " << ScientificName << endl;
+            fout << "\t (S) " << ScientificNameGenus << " | " << ScientificNameSpecies << endl;
         }
 	}
 	fout.close();
