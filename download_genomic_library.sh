@@ -57,6 +57,7 @@ case $library_name in
 		fi
 		if [ "$library_name" = "human" ]; then
 		  grep "Genome Reference Consortium" assembly_summary.txt > x
+		  mv assembly_summary.txt tmp.txt
 		  mv x assembly_summary.txt
 		fi
 
