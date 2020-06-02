@@ -62,11 +62,13 @@ Example:
 - *3	886	590*
 
 Translation mode\
-(Read ID) (Species/Genus taxonomy ID) (Genus taxonomy ID) (S/G) Scientific Name
+(Read ID) (Genus taxonomy ID) (Genus taxonomy ID)  (G) Scientific Name at Genus level      
+or \
+(Read ID) (Genus taxonomy ID) (Species taxonomy ID)  (S) Scientific Name at Genus level | Scientific Name at Species level
 
 Example:
 - *1	-1	-1*
-- *2	28116	816	 (S) Bacteroides*
+- *2	816	28116	 (S) Bacteroides | Bacteroides ovatus*
 - *3	590	590	 (G) Salmonella*
 
 (S) indicates that the read is assigned to a taxonomy ID at Species level\
