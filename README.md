@@ -21,12 +21,16 @@ Low-complexity sequences, e.g. "ACACACACACACACACA", "ATATATATATATATATAT" are kno
 **3) Datasets** 
 
 Datasets can be found at OneDrive: 
-- First simulated dataset
-https://1drv.ms/u/s!AvI5WFKEnJrGcNO2PkmiFgBz3lk?e=Ipgwac
-- Second simulated dataset
-https://1drv.ms/u/s!AvI5WFKEnJrGcv0BBP0jM72Vibs?e=j4tOX3
-- A sample of sequencing Nanopore data
+- The first simulated dataset
+https://1drv.ms/u/s!AvI5WFKEnJrGc_UeO5FW-3rQECI?e=Mvg9hI
+- The second simulated dataset
+https://1drv.ms/u/s!AvI5WFKEnJrGdOe0e75dHgZ3nos?e=5HUtny
+- The third simulated dataset
+https://1drv.ms/u/s!AvI5WFKEnJrGdbQ3ACJW4aPnTdU?e=8V4qq3
+- A sample of sequencing Nanopore MinION data
 https://www.st-va.ncbi.nlm.nih.gov/bioproject/PRJNA493153
+- Zymo mock dataset:
+https://github.com/LomanLab/mockcommunity)
 
 **4) Installation**
 
@@ -38,7 +42,12 @@ $ ./install.sh
 
 **5) Running CDKAM**
 - Downloading database:\
-./download --standard --db $DBname
+*Standard installation with archaea, bacteria and viral reference genomes*\
+./download --standard --db $DBname\
+*Or custom installation*\
+./download --download-library archaea --db DTB\
+./download --download-library bacteria --db DTB\
+......
 
 - Building database:\
 ./build_database.sh $DBname
