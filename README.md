@@ -30,7 +30,7 @@ https://1drv.ms/u/s!AvI5WFKEnJrGdbQ3ACJW4aPnTdU?e=8V4qq3
 - A sample of sequencing Nanopore MinION data
 https://www.st-va.ncbi.nlm.nih.gov/bioproject/PRJNA493153
 - Zymo mock dataset:
-https://github.com/LomanLab/mockcommunity)
+https://github.com/LomanLab/mockcommunity
 
 **4) Installation**
 
@@ -45,8 +45,8 @@ $ ./install.sh
 *Standard installation with archaea, bacteria and viral reference genomes*\
 ./download --standard --db $DBname\
 *Or custom installation*\
-./download --download-library archaea --db DTB\
-./download --download-library bacteria --db DTB\
+./download --download-library archaea --db $DBname\
+./download --download-library bacteria --db $DBname\
 ......
 
 - Building database:\
