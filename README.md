@@ -10,8 +10,8 @@ Classification tool using Discriminative K-mers and Approximate Matching algorit
 **2) Requirements**
 
 - Linux operation system
-- Memory: 50 GB
-- Disk space: 150 GB
+- Memory: 70 GB
+- Disk space: 200 GB
 - Perl 5.8.5 (or up) and GCC 6.3.1 (or up).
 - Dustmasker https://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/src/app/dustmasker/. 
 
@@ -45,6 +45,8 @@ $ ./install.sh
 *Standard installation with archaea, bacteria and viral reference genomes*\
 ./download --standard --db $DBname\
 *Or custom installation*\
+mkdir $DBname\
+./download_taxonomy.sh $DBname\
 ./download --download-library archaea --db $DBname\
 ./download --download-library bacteria --db $DBname\
 ......
