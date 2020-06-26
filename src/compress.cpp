@@ -355,7 +355,7 @@ void solveFamily(int Family, int id, vector<IISS> &vectorFamilyList, ofstream &f
 }
 
 void usage() {
-    cerr << "./compressNEW targets.txt nameFamily.txt database\n";
+    cerr << "./buildDB targets.txt nameFamily.txt database\n";
 }
 
 int main(int argc, char **argv) {
