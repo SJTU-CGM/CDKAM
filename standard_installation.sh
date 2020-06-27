@@ -35,6 +35,7 @@ touch $CDKAM_DB_NAME/targets.txt
 
 download --db $CDKAM_DB_NAME --download-library archaea $masking_flag $ftp_flag
 download --db $CDKAM_DB_NAME --download-library bacteria $masking_flag $ftp_flag
+download --db $CDKAM_DB_NAME --download-library fungi $masking_flag $ftp_flag
 download --db $CDKAM_DB_NAME --download-library viral $masking_flag $ftp_flag
-download --db $CDKAM_DB_NAME --download-library human --no-mask $ftp_flag
+#download --db $CDKAM_DB_NAME --download-library human --no-mask $ftp_flag
 
