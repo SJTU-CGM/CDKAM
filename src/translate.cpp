@@ -71,7 +71,7 @@ int main(int argc, char **argv) {
     string DTB(argv[1]);
     string namesFile = DTB + "/taxonomy/names.dmp";
     string nodesFile = DTB + "/taxonomy/nodes.dmp";
-	ifstream finNames(namesFile);
+    ifstream finNames(namesFile);
 	ifstream finNodes(nodesFile);
 	ifstream fin(argv[2]);
 	ofstream fout(argv[3]);
@@ -115,10 +115,28 @@ int main(int argc, char **argv) {
 	while (fin >> stt >> len >> taxa) {
         testSpecies[++step] = taxa;
         testGenus[step] = findGenus(taxa);
-        string ScientificNameGenus = "", ScientificNameSpecies = "";
-        if (testGenus[step] != -1){
-            ScientificNameGenus = MName[testGenus[step]];
-            ScientificNameSpecies = MName[taxa];
+        int phylumID = -1, classID = -1, orderID = -1, familyID = -1, genusID = -1, speciesID = -1;
+        int st = taxa;
+        while (st != 131567) {
+            if (st <= 2) break;
+            if (parent[st].first == "species")      speciesID = st;
+            else if(parent[st].first == "genus")    genusID = st;
+            else if (parent[st].first == "family")  familyID = st;
+            else if (parent[st].first == "order")   orderID = st;
+            else if (parent[st].first == "class")   classID = st;
+            else if (parent[st].first == "phylum")  phylumID = st;
+            st = parent[st].second;
+        }
+
+        string phylumName = "-1", className = "-1", orderName = "-1", familyName = "-1", genusName = "-1", speciesName = "-1";
+
+        if (genusID != -1){
+            if(phylumID != -1) phylumName = MName[phylumID];
+            if(classID  != -1) className  = MName[classID];
+            if(orderID  != -1) orderName  = MName[orderID];
+            if(familyID != -1) familyName = MName[familyID];
+            if(genusID  != -1) genusName  = MName[genusID];
+            if(speciesID!= -1) speciesName= MName[speciesID];
         }
 
         fout << stt << "\t" << testGenus[step] << "\t" << taxa;
@@ -128,14 +146,17 @@ int main(int argc, char **argv) {
             fout << endl;
             continue;
         }
+
         if (taxa == testGenus[step]) {
             freq[taxa]++;
-            fout << "\t (G) " << ScientificNameGenus << endl;
+            fout << "\t (AG)\t" << "(P) " << phylumName << " | (C) " << className << " | (O) " << orderName;
+            fout << " | (F) " << familyName << " | (G) " << genusName << endl;
         }
         else {
             freq[taxa]++;
             freq[testGenus[step]]++;
-            fout << "\t (S) " << ScientificNameGenus << " | " << ScientificNameSpecies << endl;
+            fout << "\t (AS)\t" << "(P) " << phylumName << " | (C) " << className << " | (O) " << orderName;
+            fout << " | (F) " << familyName << " | (G) " << genusName << " | (S) " << speciesName << endl;
         }
 	}
 	fout.close();
@@ -159,7 +180,7 @@ int main(int argc, char **argv) {
             int orderID = parent[familyID].se;
             int classID = parent[orderID].se;
             int phylumID = parent[classID].se;
-            string GenusName = MName[phylumID] + " \\ " + MName[classID] + " \\ " + MName[orderID] + " \\ " + MName[familyID] + " \\ " + MName[u];
+            string GenusName = MName[phylumID] + " | " + MName[classID] + " | " + MName[orderID] + " | " + MName[familyID] + " | " + MName[u];
             foutA << 100.0*i.fi/cntReads << "\t" << 100.0*i.fi/cntC << "\t";
             foutA << i.fi << "\t" << u << " (G) " << GenusName << endl;
 
@@ -178,6 +199,5 @@ int main(int argc, char **argv) {
     }
     foutA.close();
 
-	return 0;
+    return 0;
 }
-
