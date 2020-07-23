@@ -16,5 +16,12 @@ if [ $# -lt 4 ]; then
 	exit
 fi
 
-$LDIR/classify $LDIR/$1/database $LDIR/$1/nameFamily.txt $2 $3 $4
+for library_name in "database_Taxo"  "database_Suffix"  "database_Size"
+do
+	if [ ! -e $LDIR/$1/$library_name.txt ]; then
+		echo "Database does not contain necessary file $library_name"
+		exit 0
+	fi
+done
 
+$LDIR/classify $LDIR/$1/database $LDIR/$1/nameFamily.txt $2 $3 $4 $5 $6
