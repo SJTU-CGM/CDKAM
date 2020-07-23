@@ -1,400 +1,400 @@
-1	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-2	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-3	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-4	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-5	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-6	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-7	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-8	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-9	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-10	2284	43080	 (S) Sulfolobus | Sulfolobus islandicus
-11	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-12	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-13	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-14	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-15	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-16	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-17	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-18	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-19	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-20	2184	39152	 (S) Methanococcus | Methanococcus maripaludis
-21	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-22	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-23	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-24	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-25	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-26	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-27	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-28	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-29	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-30	1678	28025	 (S) Bifidobacterium | Bifidobacterium animalis
-31	816	817	 (S) Bacteroides | Bacteroides fragilis
-32	816	817	 (S) Bacteroides | Bacteroides fragilis
-33	816	817	 (S) Bacteroides | Bacteroides fragilis
-34	816	817	 (S) Bacteroides | Bacteroides fragilis
-35	816	817	 (S) Bacteroides | Bacteroides fragilis
-36	816	817	 (S) Bacteroides | Bacteroides fragilis
-37	816	817	 (S) Bacteroides | Bacteroides fragilis
-38	816	817	 (S) Bacteroides | Bacteroides fragilis
-39	816	817	 (S) Bacteroides | Bacteroides fragilis
-40	816	817	 (S) Bacteroides | Bacteroides fragilis
-41	810	83554	 (S) Chlamydia | Chlamydia psittaci
-42	810	83554	 (S) Chlamydia | Chlamydia psittaci
-43	810	83554	 (S) Chlamydia | Chlamydia psittaci
-44	810	1967783	 (S) Chlamydia | Chlamydia sp. S15-834C
-45	810	83554	 (S) Chlamydia | Chlamydia psittaci
-46	810	83554	 (S) Chlamydia | Chlamydia psittaci
-47	810	83554	 (S) Chlamydia | Chlamydia psittaci
-48	810	83554	 (S) Chlamydia | Chlamydia psittaci
-49	810	83554	 (S) Chlamydia | Chlamydia psittaci
-50	810	83554	 (S) Chlamydia | Chlamydia psittaci
-51	270	274	 (S) Thermus | Thermus thermophilus
-52	270	274	 (S) Thermus | Thermus thermophilus
-53	270	274	 (S) Thermus | Thermus thermophilus
-54	270	274	 (S) Thermus | Thermus thermophilus
-55	270	274	 (S) Thermus | Thermus thermophilus
-56	270	274	 (S) Thermus | Thermus thermophilus
-57	270	274	 (S) Thermus | Thermus thermophilus
-58	270	274	 (S) Thermus | Thermus thermophilus
-59	270	274	 (S) Thermus | Thermus thermophilus
-60	270	274	 (S) Thermus | Thermus thermophilus
-61	1386	1428	 (S) Bacillus | Bacillus thuringiensis
-62	1386	2499213	 (S) Bacillus | Bacillus sp. BD59S
-63	1386	1396	 (S) Bacillus | Bacillus cereus
-64	1386	1890302	 (S) Bacillus | Bacillus wiedmannii
-65	1386	2026189	 (S) Bacillus | Bacillus albus
-66	1386	1396	 (S) Bacillus | Bacillus cereus
-67	1386	1890302	 (S) Bacillus | Bacillus wiedmannii
-68	1386	580165	 (S) Bacillus | Bacillus cytotoxicus
-69	1386	2026189	 (S) Bacillus | Bacillus albus
-70	1386	1890302	 (S) Bacillus | Bacillus wiedmannii
-71	1637	1639	 (S) Listeria | Listeria monocytogenes
-72	1637	1639	 (S) Listeria | Listeria monocytogenes
-73	1637	1639	 (S) Listeria | Listeria monocytogenes
-74	1637	1639	 (S) Listeria | Listeria monocytogenes
-75	1637	1639	 (S) Listeria | Listeria monocytogenes
-76	1637	1639	 (S) Listeria | Listeria monocytogenes
-77	1637	1639	 (S) Listeria | Listeria monocytogenes
-78	1637	1639	 (S) Listeria | Listeria monocytogenes
-79	1637	1639	 (S) Listeria | Listeria monocytogenes
-80	1637	1639	 (S) Listeria | Listeria monocytogenes
-81	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-82	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-83	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-84	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-85	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-86	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-87	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-88	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-89	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-90	44249	61624	 (S) Paenibacillus | Paenibacillus mucilaginosus
-91	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-92	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-93	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-94	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-95	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-96	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-97	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-98	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-99	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-100	1279	1280	 (S) Staphylococcus | Staphylococcus aureus
-101	1350	1351	 (S) Enterococcus | Enterococcus faecalis
-102	1350	1351	 (S) Enterococcus | Enterococcus faecalis
-103	1350	1352	 (S) Enterococcus | Enterococcus faecium
-104	1350	1351	 (S) Enterococcus | Enterococcus faecalis
-105	1350	1351	 (S) Enterococcus | Enterococcus faecalis
-106	1350	1351	 (S) Enterococcus | Enterococcus faecalis
-107	1350	1351	 (S) Enterococcus | Enterococcus faecalis
-108	1350	1351	 (S) Enterococcus | Enterococcus faecalis
-109	1350	1351	 (S) Enterococcus | Enterococcus faecalis
-110	1350	1351	 (S) Enterococcus | Enterococcus faecalis
-111	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-112	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-113	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-114	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-115	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-116	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-117	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-118	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-119	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-120	1578	1597	 (S) Lactobacillus | Lactobacillus paracasei
-121	1301	1314	 (S) Streptococcus | Streptococcus pyogenes
-122	1301	1308	 (S) Streptococcus | Streptococcus thermophilus
-123	1301	1308	 (S) Streptococcus | Streptococcus thermophilus
-124	1301	1308	 (S) Streptococcus | Streptococcus thermophilus
-125	1301	1308	 (S) Streptococcus | Streptococcus thermophilus
-126	1301	1308	 (S) Streptococcus | Streptococcus thermophilus
-127	1301	1308	 (S) Streptococcus | Streptococcus thermophilus
-128	1301	1308	 (S) Streptococcus | Streptococcus thermophilus
-129	1301	1308	 (S) Streptococcus | Streptococcus thermophilus
-130	1301	1308	 (S) Streptococcus | Streptococcus thermophilus
-131	1485	1491	 (S) Clostridium | Clostridium botulinum
-132	1485	1491	 (S) Clostridium | Clostridium botulinum
-133	1485	1491	 (S) Clostridium | Clostridium botulinum
-134	1485	1491	 (S) Clostridium | Clostridium botulinum
-135	1485	1491	 (S) Clostridium | Clostridium botulinum
-136	1485	1491	 (S) Clostridium | Clostridium botulinum
-137	1485	1491	 (S) Clostridium | Clostridium botulinum
-138	1485	1491	 (S) Clostridium | Clostridium botulinum
-139	1485	1491	 (S) Clostridium | Clostridium botulinum
-140	1485	1491	 (S) Clostridium | Clostridium botulinum
-141	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-142	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-143	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-144	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-145	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-146	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-147	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-148	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-149	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-150	2282523	408	 (S) Methylorubrum | Methylorubrum extorquens
-151	379	384	 (S) Rhizobium | Rhizobium leguminosarum
-152	379	384	 (S) Rhizobium | Rhizobium leguminosarum
-153	379	384	 (S) Rhizobium | Rhizobium leguminosarum
-154	379	384	 (S) Rhizobium | Rhizobium leguminosarum
-155	379	384	 (S) Rhizobium | Rhizobium leguminosarum
-156	379	384	 (S) Rhizobium | Rhizobium leguminosarum
-157	379	384	 (S) Rhizobium | Rhizobium leguminosarum
-158	379	384	 (S) Rhizobium | Rhizobium leguminosarum
-159	379	384	 (S) Rhizobium | Rhizobium leguminosarum
-160	379	2020311	 (S) Rhizobium | Rhizobium sp. Kim5
-161	28105	380	 (S) Sinorhizobium | Sinorhizobium fredii
-162	28105	380	 (S) Sinorhizobium | Sinorhizobium fredii
-163	28105	380	 (S) Sinorhizobium | Sinorhizobium fredii
-164	28105	380	 (S) Sinorhizobium | Sinorhizobium fredii
-165	28105	380	 (S) Sinorhizobium | Sinorhizobium fredii
-166	28105	382	 (S) Sinorhizobium | Sinorhizobium meliloti
-167	28105	380	 (S) Sinorhizobium | Sinorhizobium fredii
-168	28105	380	 (S) Sinorhizobium | Sinorhizobium fredii
-169	28105	380	 (S) Sinorhizobium | Sinorhizobium fredii
-170	28105	380	 (S) Sinorhizobium | Sinorhizobium fredii
-171	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-172	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-173	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-174	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-175	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-176	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-177	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-178	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-179	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-180	768	948	 (S) Anaplasma | Anaplasma phagocytophilum
-181	780	782	 (S) Rickettsia | Rickettsia prowazekii
-182	780	782	 (S) Rickettsia | Rickettsia prowazekii
-183	780	782	 (S) Rickettsia | Rickettsia prowazekii
-184	780	782	 (S) Rickettsia | Rickettsia prowazekii
-185	780	782	 (S) Rickettsia | Rickettsia prowazekii
-186	780	782	 (S) Rickettsia | Rickettsia prowazekii
-187	780	782	 (S) Rickettsia | Rickettsia prowazekii
-188	780	782	 (S) Rickettsia | Rickettsia prowazekii
-189	780	782	 (S) Rickettsia | Rickettsia prowazekii
-190	780	782	 (S) Rickettsia | Rickettsia prowazekii
-191	517	520	 (S) Bordetella | Bordetella pertussis
-192	517	463024	 (S) Bordetella | Bordetella genomosp. 6
-193	517	1331258	 (S) Bordetella | Bordetella pseudohinzii
-194	517	520	 (S) Bordetella | Bordetella pertussis
-195	517	123899	 (S) Bordetella | Bordetella trematum
-196	517	463024	 (S) Bordetella | Bordetella genomosp. 6
-197	517	1331258	 (S) Bordetella | Bordetella pseudohinzii
-198	517	463040	 (S) Bordetella | Bordetella genomosp. 13
-199	517	463024	 (S) Bordetella | Bordetella genomosp. 6
-200	517	518	 (S) Bordetella | Bordetella bronchiseptica
-201	482	487	 (S) Neisseria | Neisseria meningitidis
-202	482	487	 (S) Neisseria | Neisseria meningitidis
-203	482	487	 (S) Neisseria | Neisseria meningitidis
-204	482	487	 (S) Neisseria | Neisseria meningitidis
-205	482	487	 (S) Neisseria | Neisseria meningitidis
-206	482	487	 (S) Neisseria | Neisseria meningitidis
-207	482	487	 (S) Neisseria | Neisseria meningitidis
-208	482	487	 (S) Neisseria | Neisseria meningitidis
-209	482	487	 (S) Neisseria | Neisseria meningitidis
-210	482	487	 (S) Neisseria | Neisseria meningitidis
-211	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-212	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-213	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-214	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-215	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-216	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-217	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-218	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-219	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-220	872	881	 (S) Desulfovibrio | Desulfovibrio vulgaris
-221	28196	28197	 (S) Arcobacter | Arcobacter butzleri
-222	28196	1080223	 (S) Arcobacter | Arcobacter pacificus
-223	28196	28197	 (S) Arcobacter | Arcobacter butzleri
-224	28196	28197	 (S) Arcobacter | Arcobacter butzleri
-225	28196	28197	 (S) Arcobacter | Arcobacter butzleri
-226	28196	28197	 (S) Arcobacter | Arcobacter butzleri
-227	28196	28197	 (S) Arcobacter | Arcobacter butzleri
-228	28196	28197	 (S) Arcobacter | Arcobacter butzleri
-229	28196	28197	 (S) Arcobacter | Arcobacter butzleri
-230	28196	28197	 (S) Arcobacter | Arcobacter butzleri
-231	194	197	 (S) Campylobacter | Campylobacter jejuni
-232	194	197	 (S) Campylobacter | Campylobacter jejuni
-233	194	197	 (S) Campylobacter | Campylobacter jejuni
-234	194	197	 (S) Campylobacter | Campylobacter jejuni
-235	194	197	 (S) Campylobacter | Campylobacter jejuni
-236	194	197	 (S) Campylobacter | Campylobacter jejuni
-237	194	197	 (S) Campylobacter | Campylobacter jejuni
-238	194	197	 (S) Campylobacter | Campylobacter jejuni
-239	194	197	 (S) Campylobacter | Campylobacter jejuni
-240	194	197	 (S) Campylobacter | Campylobacter jejuni
-241	22	62322	 (S) Shewanella | Shewanella baltica
-242	22	62322	 (S) Shewanella | Shewanella baltica
-243	22	62322	 (S) Shewanella | Shewanella baltica
-244	22	1930557	 (S) Shewanella | Shewanella sp. FDAARGOS_354
-245	22	62322	 (S) Shewanella | Shewanella baltica
-246	22	62322	 (S) Shewanella | Shewanella baltica
-247	22	62322	 (S) Shewanella | Shewanella baltica
-248	22	62322	 (S) Shewanella | Shewanella baltica
-249	22	62322	 (S) Shewanella | Shewanella baltica
-250	22	62322	 (S) Shewanella | Shewanella baltica
-251	83654	1920116	 (S) Leclercia | Leclercia sp. LSNIH3
-252	413496	28141	 (S) Cronobacter | Cronobacter sakazakii
-253	413496	28141	 (S) Cronobacter | Cronobacter sakazakii
-254	413496	28141	 (S) Cronobacter | Cronobacter sakazakii
-255	413496	1163710	 (S) Cronobacter | Cronobacter condimenti
-256	413496	28141	 (S) Cronobacter | Cronobacter sakazakii
-257	413496	28141	 (S) Cronobacter | Cronobacter sakazakii
-258	413496	28141	 (S) Cronobacter | Cronobacter sakazakii
-259	413496	28141	 (S) Cronobacter | Cronobacter sakazakii
-260	413496	28141	 (S) Cronobacter | Cronobacter sakazakii
-261	547	550	 (S) Enterobacter | Enterobacter cloacae
-262	547	550	 (S) Enterobacter | Enterobacter cloacae
-263	547	550	 (S) Enterobacter | Enterobacter cloacae
-264	547	550	 (S) Enterobacter | Enterobacter cloacae
-265	261963	261964	 (S) Kangiella | Kangiella koreensis
-266	1330547	1158459	 (S) Kosakonia | Kosakonia sacchari
-267	1330546	1334193	 (S) Pluralibacter | [Enterobacter] lignolyticus
-268	547	550	 (S) Enterobacter | Enterobacter cloacae
-269	1330545	69220	 (S) Lelliottia | Lelliottia nimipressuralis
-270	547	550	 (S) Enterobacter | Enterobacter cloacae
-271	561	562	 (S) Escherichia | Escherichia coli
-272	561	562	 (S) Escherichia | Escherichia coli
-273	561	562	 (S) Escherichia | Escherichia coli
-274	561	562	 (S) Escherichia | Escherichia coli
-275	620	623	 (S) Shigella | Shigella flexneri
-276	561	562	 (S) Escherichia | Escherichia coli
-277	561	562	 (S) Escherichia | Escherichia coli
-278	561	562	 (S) Escherichia | Escherichia coli
-279	613	82996	 (S) Serratia | Serratia plymuthica
-280	561	562	 (S) Escherichia | Escherichia coli
-281	53335	553	 (S) Pantoea | Pantoea ananatis
-282	53335	553	 (S) Pantoea | Pantoea ananatis
-283	53335	553	 (S) Pantoea | Pantoea ananatis
-284	53335	553	 (S) Pantoea | Pantoea ananatis
-285	53335	553	 (S) Pantoea | Pantoea ananatis
-286	53335	553	 (S) Pantoea | Pantoea ananatis
-287	53335	553	 (S) Pantoea | Pantoea ananatis
-288	53335	553	 (S) Pantoea | Pantoea ananatis
-289	53335	553	 (S) Pantoea | Pantoea ananatis
-290	53335	553	 (S) Pantoea | Pantoea ananatis
-291	613	82996	 (S) Serratia | Serratia plymuthica
-292	613	82996	 (S) Serratia | Serratia plymuthica
-293	613	613	 (G) Serratia
-294	613	82996	 (S) Serratia | Serratia plymuthica
-295	613	82996	 (S) Serratia | Serratia plymuthica
-296	613	613	 (G) Serratia
-297	613	82996	 (S) Serratia | Serratia plymuthica
-298	613	82996	 (S) Serratia | Serratia plymuthica
-299	613	82996	 (S) Serratia | Serratia plymuthica
-300	613	82996	 (S) Serratia | Serratia plymuthica
-301	713	715	 (S) Actinobacillus | Actinobacillus pleuropneumoniae
-302	713	715	 (S) Actinobacillus | Actinobacillus pleuropneumoniae
-303	713	715	 (S) Actinobacillus | Actinobacillus pleuropneumoniae
-304	713	715	 (S) Actinobacillus | Actinobacillus pleuropneumoniae
-305	713	715	 (S) Actinobacillus | Actinobacillus pleuropneumoniae
-306	713	718	 (S) Actinobacillus | Actinobacillus equuli
-307	713	715	 (S) Actinobacillus | Actinobacillus pleuropneumoniae
-308	713	715	 (S) Actinobacillus | Actinobacillus pleuropneumoniae
-309	713	715	 (S) Actinobacillus | Actinobacillus pleuropneumoniae
-310	713	715	 (S) Actinobacillus | Actinobacillus pleuropneumoniae
-311	724	197575	 (S) Haemophilus | Haemophilus aegyptius
-312	724	727	 (S) Haemophilus | Haemophilus influenzae
-313	724	727	 (S) Haemophilus | Haemophilus influenzae
-314	724	727	 (S) Haemophilus | Haemophilus influenzae
-315	724	727	 (S) Haemophilus | Haemophilus influenzae
-316	724	727	 (S) Haemophilus | Haemophilus influenzae
-317	724	727	 (S) Haemophilus | Haemophilus influenzae
-318	724	727	 (S) Haemophilus | Haemophilus influenzae
-319	724	727	 (S) Haemophilus | Haemophilus influenzae
-320	724	727	 (S) Haemophilus | Haemophilus influenzae
-321	469	106654	 (S) Acinetobacter | Acinetobacter nosocomialis
-322	469	470	 (S) Acinetobacter | Acinetobacter baumannii
-323	469	470	 (S) Acinetobacter | Acinetobacter baumannii
-324	469	470	 (S) Acinetobacter | Acinetobacter baumannii
-325	469	1148157	 (S) Acinetobacter | Acinetobacter oleivorans
-326	469	470	 (S) Acinetobacter | Acinetobacter baumannii
-327	469	1407071	 (S) Acinetobacter | Acinetobacter sp. TGL-Y2
-328	469	470	 (S) Acinetobacter | Acinetobacter baumannii
-329	469	470	 (S) Acinetobacter | Acinetobacter baumannii
-330	469	470	 (S) Acinetobacter | Acinetobacter baumannii
-331	286	1207075	 (S) Pseudomonas | Pseudomonas sp. UW4
-332	286	303	 (S) Pseudomonas | Pseudomonas putida
-333	286	303	 (S) Pseudomonas | Pseudomonas putida
-334	286	303	 (S) Pseudomonas | Pseudomonas putida
-335	286	1573704	 (S) Pseudomonas | Pseudomonas sp. R32
-336	286	303	 (S) Pseudomonas | Pseudomonas putida
-337	286	303	 (S) Pseudomonas | Pseudomonas putida
-338	286	303	 (S) Pseudomonas | Pseudomonas putida
-339	286	303	 (S) Pseudomonas | Pseudomonas putida
-340	286	303	 (S) Pseudomonas | Pseudomonas putida
-341	262	263	 (S) Francisella | Francisella tularensis
-342	262	263	 (S) Francisella | Francisella tularensis
-343	262	263	 (S) Francisella | Francisella tularensis
-344	262	263	 (S) Francisella | Francisella tularensis
-345	262	263	 (S) Francisella | Francisella tularensis
-346	262	263	 (S) Francisella | Francisella tularensis
-347	262	263	 (S) Francisella | Francisella tularensis
-348	262	263	 (S) Francisella | Francisella tularensis
-349	262	263	 (S) Francisella | Francisella tularensis
-350	262	263	 (S) Francisella | Francisella tularensis
-351	338	339	 (S) Xanthomonas | Xanthomonas campestris
-352	338	339	 (S) Xanthomonas | Xanthomonas campestris
-353	338	339	 (S) Xanthomonas | Xanthomonas campestris
-354	338	339	 (S) Xanthomonas | Xanthomonas campestris
-355	338	339	 (S) Xanthomonas | Xanthomonas campestris
-356	338	339	 (S) Xanthomonas | Xanthomonas campestris
-357	338	339	 (S) Xanthomonas | Xanthomonas campestris
-358	338	339	 (S) Xanthomonas | Xanthomonas campestris
-359	338	339	 (S) Xanthomonas | Xanthomonas campestris
-360	338	339	 (S) Xanthomonas | Xanthomonas campestris
-361	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-362	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-363	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-364	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-365	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-366	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-367	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-368	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-369	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-370	29521	52584	 (S) Brachyspira | Brachyspira pilosicoli
-371	64895	1674146	 (S) Borreliella | Borrelia mayonii
-372	64895	139	 (S) Borreliella | Borreliella burgdorferi
-373	64895	139	 (S) Borreliella | Borreliella burgdorferi
-374	64895	1476873	 (S) Borreliella | Borrelia sp. CA690
-375	64895	1476873	 (S) Borreliella | Borrelia sp. CA690
-376	64895	1674146	 (S) Borreliella | Borrelia mayonii
-377	64895	1476873	 (S) Borreliella | Borrelia sp. CA690
-378	64895	1674146	 (S) Borreliella | Borrelia mayonii
-379	64895	139	 (S) Borreliella | Borreliella burgdorferi
-380	64895	139	 (S) Borreliella | Borreliella burgdorferi
-381	157	160	 (S) Treponema | Treponema pallidum
-382	157	160	 (S) Treponema | Treponema pallidum
-383	157	160	 (S) Treponema | Treponema pallidum
-384	157	160	 (S) Treponema | Treponema pallidum
-385	157	160	 (S) Treponema | Treponema pallidum
-386	157	160	 (S) Treponema | Treponema pallidum
-387	157	409322	 (S) Treponema | Treponema pedis
-388	157	160	 (S) Treponema | Treponema pallidum
-389	157	160	 (S) Treponema | Treponema pallidum
-390	157	160	 (S) Treponema | Treponema pallidum
-391	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
-392	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
-393	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
-394	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
-395	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
-396	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
-397	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
-398	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
-399	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
-400	2093	2096	 (S) Mycoplasma | Mycoplasma gallisepticum
+1	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+2	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+3	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+4	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+5	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+6	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+7	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+8	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+9	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+10	2284	43080	 (AS)	(P) Crenarchaeota | (C) Thermoprotei | (O) Sulfolobales | (F) Sulfolobaceae | (G) Sulfolobus | (S) Sulfolobus islandicus
+11	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+12	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+13	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+14	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+15	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+16	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+17	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+18	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+19	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+20	2184	39152	 (AS)	(P) Euryarchaeota | (C) Methanococci | (O) Methanococcales | (F) Methanococcaceae | (G) Methanococcus | (S) Methanococcus maripaludis
+21	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+22	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+23	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+24	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+25	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+26	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+27	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+28	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+29	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+30	1678	28025	 (AS)	(P) Actinobacteria | (C) Actinobacteria | (O) Bifidobacteriales | (F) Bifidobacteriaceae | (G) Bifidobacterium | (S) Bifidobacterium animalis
+31	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+32	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+33	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+34	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+35	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+36	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+37	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+38	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+39	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+40	816	817	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides fragilis
+41	810	83554	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia psittaci
+42	810	83554	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia psittaci
+43	810	83554	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia psittaci
+44	810	1967783	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia sp. S15-834C
+45	810	83554	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia psittaci
+46	810	83554	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia psittaci
+47	810	83554	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia psittaci
+48	810	83554	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia psittaci
+49	810	83554	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia psittaci
+50	810	83554	 (AS)	(P) Chlamydiae | (C) Chlamydiia | (O) Chlamydiales | (F) Chlamydiaceae | (G) Chlamydia | (S) Chlamydia psittaci
+51	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+52	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+53	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+54	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+55	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+56	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+57	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+58	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+59	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+60	270	274	 (AS)	(P) Deinococcus-Thermus | (C) Deinococci | (O) Thermales | (F) Thermaceae | (G) Thermus | (S) Thermus thermophilus
+61	1386	1428	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus thuringiensis
+62	1386	2499213	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus sp. BD59S
+63	1386	1396	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus cereus
+64	1386	1890302	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus wiedmannii
+65	1386	2026189	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus albus
+66	1386	1396	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus cereus
+67	1386	1890302	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus wiedmannii
+68	1386	580165	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus cytotoxicus
+69	1386	2026189	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus albus
+70	1386	1890302	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Bacillaceae | (G) Bacillus | (S) Bacillus wiedmannii
+71	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+72	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+73	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+74	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+75	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+76	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+77	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+78	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+79	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+80	1637	1639	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Listeriaceae | (G) Listeria | (S) Listeria monocytogenes
+81	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+82	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+83	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+84	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+85	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+86	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+87	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+88	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+89	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+90	44249	61624	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Paenibacillaceae | (G) Paenibacillus | (S) Paenibacillus mucilaginosus
+91	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+92	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+93	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+94	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+95	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+96	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+97	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+98	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+99	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+100	1279	1280	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Bacillales | (F) Staphylococcaceae | (G) Staphylococcus | (S) Staphylococcus aureus
+101	1350	1351	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecalis
+102	1350	1351	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecalis
+103	1350	1352	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecium
+104	1350	1351	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecalis
+105	1350	1351	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecalis
+106	1350	1351	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecalis
+107	1350	1351	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecalis
+108	1350	1351	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecalis
+109	1350	1351	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecalis
+110	1350	1351	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Enterococcaceae | (G) Enterococcus | (S) Enterococcus faecalis
+111	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+112	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+113	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+114	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+115	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+116	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+117	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+118	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+119	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+120	1578	1597	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Lactobacillaceae | (G) Lactobacillus | (S) Lactobacillus paracasei
+121	1301	1314	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus pyogenes
+122	1301	1308	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus thermophilus
+123	1301	1308	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus thermophilus
+124	1301	1308	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus thermophilus
+125	1301	1308	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus thermophilus
+126	1301	1308	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus thermophilus
+127	1301	1308	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus thermophilus
+128	1301	1308	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus thermophilus
+129	1301	1308	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus thermophilus
+130	1301	1308	 (AS)	(P) Firmicutes | (C) Bacilli | (O) Lactobacillales | (F) Streptococcaceae | (G) Streptococcus | (S) Streptococcus thermophilus
+131	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+132	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+133	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+134	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+135	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+136	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+137	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+138	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+139	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+140	1485	1491	 (AS)	(P) Firmicutes | (C) Clostridia | (O) Clostridiales | (F) Clostridiaceae | (G) Clostridium | (S) Clostridium botulinum
+141	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+142	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+143	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+144	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+145	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+146	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+147	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+148	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+149	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+150	2282523	408	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Methylobacteriaceae | (G) Methylorubrum | (S) Methylorubrum extorquens
+151	379	384	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium leguminosarum
+152	379	384	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium leguminosarum
+153	379	384	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium leguminosarum
+154	379	384	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium leguminosarum
+155	379	384	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium leguminosarum
+156	379	384	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium leguminosarum
+157	379	384	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium leguminosarum
+158	379	384	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium leguminosarum
+159	379	384	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium leguminosarum
+160	379	2020311	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Rhizobium | (S) Rhizobium sp. Kim5
+161	28105	380	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium fredii
+162	28105	380	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium fredii
+163	28105	380	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium fredii
+164	28105	380	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium fredii
+165	28105	380	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium fredii
+166	28105	382	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium meliloti
+167	28105	380	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium fredii
+168	28105	380	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium fredii
+169	28105	380	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium fredii
+170	28105	380	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rhizobiales | (F) Rhizobiaceae | (G) Sinorhizobium | (S) Sinorhizobium fredii
+171	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+172	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+173	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+174	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+175	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+176	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+177	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+178	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+179	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+180	768	948	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Anaplasmataceae | (G) Anaplasma | (S) Anaplasma phagocytophilum
+181	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+182	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+183	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+184	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+185	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+186	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+187	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+188	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+189	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+190	780	782	 (AS)	(P) Proteobacteria | (C) Alphaproteobacteria | (O) Rickettsiales | (F) Rickettsiaceae | (G) Rickettsia | (S) Rickettsia prowazekii
+191	517	520	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella pertussis
+192	517	463024	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella genomosp. 6
+193	517	1331258	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella pseudohinzii
+194	517	520	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella pertussis
+195	517	123899	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella trematum
+196	517	463024	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella genomosp. 6
+197	517	1331258	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella pseudohinzii
+198	517	463040	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella genomosp. 13
+199	517	463024	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella genomosp. 6
+200	517	518	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Burkholderiales | (F) Alcaligenaceae | (G) Bordetella | (S) Bordetella bronchiseptica
+201	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+202	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+203	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+204	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+205	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+206	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+207	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+208	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+209	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+210	482	487	 (AS)	(P) Proteobacteria | (C) Betaproteobacteria | (O) Neisseriales | (F) Neisseriaceae | (G) Neisseria | (S) Neisseria meningitidis
+211	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+212	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+213	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+214	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+215	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+216	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+217	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+218	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+219	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+220	872	881	 (AS)	(P) Proteobacteria | (C) Deltaproteobacteria | (O) Desulfovibrionales | (F) Desulfovibrionaceae | (G) Desulfovibrio | (S) Desulfovibrio vulgaris
+221	28196	28197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter butzleri
+222	28196	1080223	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter pacificus
+223	28196	28197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter butzleri
+224	28196	28197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter butzleri
+225	28196	28197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter butzleri
+226	28196	28197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter butzleri
+227	28196	28197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter butzleri
+228	28196	28197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter butzleri
+229	28196	28197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter butzleri
+230	28196	28197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Arcobacter | (S) Arcobacter butzleri
+231	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+232	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+233	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+234	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+235	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+236	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+237	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+238	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+239	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+240	194	197	 (AS)	(P) Proteobacteria | (C) Epsilonproteobacteria | (O) Campylobacterales | (F) Campylobacteraceae | (G) Campylobacter | (S) Campylobacter jejuni
+241	22	62322	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella baltica
+242	22	62322	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella baltica
+243	22	62322	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella baltica
+244	22	1930557	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella sp. FDAARGOS_354
+245	22	62322	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella baltica
+246	22	62322	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella baltica
+247	22	62322	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella baltica
+248	22	62322	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella baltica
+249	22	62322	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella baltica
+250	22	62322	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Alteromonadales | (F) Shewanellaceae | (G) Shewanella | (S) Shewanella baltica
+251	83654	1920116	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Leclercia | (S) Leclercia sp. LSNIH3
+252	413496	28141	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Cronobacter | (S) Cronobacter sakazakii
+253	413496	28141	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Cronobacter | (S) Cronobacter sakazakii
+254	413496	28141	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Cronobacter | (S) Cronobacter sakazakii
+255	413496	1163710	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Cronobacter | (S) Cronobacter condimenti
+256	413496	28141	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Cronobacter | (S) Cronobacter sakazakii
+257	413496	28141	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Cronobacter | (S) Cronobacter sakazakii
+258	413496	28141	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Cronobacter | (S) Cronobacter sakazakii
+259	413496	28141	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Cronobacter | (S) Cronobacter sakazakii
+260	413496	28141	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Cronobacter | (S) Cronobacter sakazakii
+261	547	550	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Enterobacter | (S) Enterobacter cloacae
+262	547	550	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Enterobacter | (S) Enterobacter cloacae
+263	547	550	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Enterobacter | (S) Enterobacter cloacae
+264	547	550	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Enterobacter | (S) Enterobacter cloacae
+265	261963	261964	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Oceanospirillales | (F) Kangiellaceae | (G) Kangiella | (S) Kangiella koreensis
+266	1330547	1158459	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Kosakonia | (S) Kosakonia sacchari
+267	1330546	1334193	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Pluralibacter | (S) [Enterobacter] lignolyticus
+268	547	550	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Enterobacter | (S) Enterobacter cloacae
+269	1330545	69220	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Lelliottia | (S) Lelliottia nimipressuralis
+270	547	550	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Enterobacter | (S) Enterobacter cloacae
+271	561	562	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Escherichia | (S) Escherichia coli
+272	561	562	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Escherichia | (S) Escherichia coli
+273	561	562	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Escherichia | (S) Escherichia coli
+274	561	562	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Escherichia | (S) Escherichia coli
+275	620	623	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Shigella | (S) Shigella flexneri
+276	561	562	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Escherichia | (S) Escherichia coli
+277	561	562	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Escherichia | (S) Escherichia coli
+278	561	562	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Escherichia | (S) Escherichia coli
+279	613	82996	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia | (S) Serratia plymuthica
+280	561	562	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Escherichia | (S) Escherichia coli
+281	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+282	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+283	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+284	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+285	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+286	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+287	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+288	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+289	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+290	53335	553	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Erwiniaceae | (G) Pantoea | (S) Pantoea ananatis
+291	613	82996	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia | (S) Serratia plymuthica
+292	613	82996	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia | (S) Serratia plymuthica
+293	613	613	 (AG)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia
+294	613	82996	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia | (S) Serratia plymuthica
+295	613	82996	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia | (S) Serratia plymuthica
+296	613	613	 (AG)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia
+297	613	82996	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia | (S) Serratia plymuthica
+298	613	82996	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia | (S) Serratia plymuthica
+299	613	82996	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia | (S) Serratia plymuthica
+300	613	82996	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Yersiniaceae | (G) Serratia | (S) Serratia plymuthica
+301	713	715	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus pleuropneumoniae
+302	713	715	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus pleuropneumoniae
+303	713	715	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus pleuropneumoniae
+304	713	715	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus pleuropneumoniae
+305	713	715	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus pleuropneumoniae
+306	713	718	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus equuli
+307	713	715	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus pleuropneumoniae
+308	713	715	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus pleuropneumoniae
+309	713	715	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus pleuropneumoniae
+310	713	715	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Actinobacillus | (S) Actinobacillus pleuropneumoniae
+311	724	197575	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus aegyptius
+312	724	727	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus influenzae
+313	724	727	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus influenzae
+314	724	727	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus influenzae
+315	724	727	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus influenzae
+316	724	727	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus influenzae
+317	724	727	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus influenzae
+318	724	727	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus influenzae
+319	724	727	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus influenzae
+320	724	727	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pasteurellales | (F) Pasteurellaceae | (G) Haemophilus | (S) Haemophilus influenzae
+321	469	106654	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter nosocomialis
+322	469	470	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter baumannii
+323	469	470	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter baumannii
+324	469	470	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter baumannii
+325	469	1148157	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter oleivorans
+326	469	470	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter baumannii
+327	469	1407071	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter sp. TGL-Y2
+328	469	470	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter baumannii
+329	469	470	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter baumannii
+330	469	470	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Moraxellaceae | (G) Acinetobacter | (S) Acinetobacter baumannii
+331	286	1207075	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas sp. UW4
+332	286	303	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas putida
+333	286	303	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas putida
+334	286	303	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas putida
+335	286	1573704	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas sp. R32
+336	286	303	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas putida
+337	286	303	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas putida
+338	286	303	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas putida
+339	286	303	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas putida
+340	286	303	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Pseudomonadales | (F) Pseudomonadaceae | (G) Pseudomonas | (S) Pseudomonas putida
+341	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+342	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+343	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+344	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+345	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+346	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+347	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+348	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+349	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+350	262	263	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Thiotrichales | (F) Francisellaceae | (G) Francisella | (S) Francisella tularensis
+351	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+352	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+353	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+354	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+355	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+356	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+357	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+358	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+359	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+360	338	339	 (AS)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Xanthomonadales | (F) Xanthomonadaceae | (G) Xanthomonas | (S) Xanthomonas campestris
+361	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+362	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+363	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+364	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+365	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+366	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+367	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+368	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+369	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+370	29521	52584	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Brachyspirales | (F) Brachyspiraceae | (G) Brachyspira | (S) Brachyspira pilosicoli
+371	64895	1674146	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borrelia mayonii
+372	64895	139	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borreliella burgdorferi
+373	64895	139	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borreliella burgdorferi
+374	64895	1476873	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borrelia sp. CA690
+375	64895	1476873	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borrelia sp. CA690
+376	64895	1674146	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borrelia mayonii
+377	64895	1476873	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borrelia sp. CA690
+378	64895	1674146	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borrelia mayonii
+379	64895	139	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borreliella burgdorferi
+380	64895	139	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Borreliaceae | (G) Borreliella | (S) Borreliella burgdorferi
+381	157	160	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pallidum
+382	157	160	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pallidum
+383	157	160	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pallidum
+384	157	160	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pallidum
+385	157	160	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pallidum
+386	157	160	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pallidum
+387	157	409322	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pedis
+388	157	160	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pallidum
+389	157	160	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pallidum
+390	157	160	 (AS)	(P) Spirochaetes | (C) Spirochaetia | (O) Spirochaetales | (F) Spirochaetaceae | (G) Treponema | (S) Treponema pallidum
+391	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
+392	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
+393	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
+394	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
+395	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
+396	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
+397	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
+398	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
+399	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
+400	2093	2096	 (AS)	(P) Tenericutes | (C) Mollicutes | (O) Mycoplasmatales | (F) Mycoplasmataceae | (G) Mycoplasma | (S) Mycoplasma gallisepticum
