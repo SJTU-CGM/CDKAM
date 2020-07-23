@@ -8,7 +8,7 @@
 */
 
 
-
+#include <omp.h>
 #include "seqreader.h"
 #define LL long long
 #define ULL unsigned long long
@@ -66,17 +66,21 @@ namespace Time{
 
 
 /*************PARAMETER******************/
-const int KMER = 32, PREFIX = 14, SHIFT = 2* PREFIX, SHIFTLEFT = 64 - (2*PREFIX), MAXBIT = 1<<(2*PREFIX);
+const int KMER = 32, PREFIX = 14, SHIFT = 2*PREFIX, SHIFTLEFT = 64 - (2*PREFIX);
 uint64_t RIGHT31 = 4611686018427387903ULL;
-uint32_t  RIGHT10 = 1048575, RIGHT16 = 4294967295, MIDDLE[8];
+uint32_t RIGHT16 = 4294967295, MIDDLE[8], MAXBIT = 1<<(2*PREFIX);
 int nameFamily[3000005], nameGenus[3000005];
-/***************************************************/
+LL globalCom = 0;
+/****************************************/
 
+struct OutputData {
+    uint64_t block_id;
+    string dataString;
+};
 
 
 class HashTable {
 private:
-    int dp[20][20];
     uint32_t *stID, *suffix, *taxoID;
     size_t cntHash;
 
@@ -87,7 +91,10 @@ public:
         delete[] taxoID;
         delete[] stID;
     };
+
     int distStringDP(uint32_t u, uint32_t v) {
+        int dp[11][11];
+        memset(dp, 0, sizeof(dp));
         int m = 10, n = 10;
         for (int i = 0; i <= m; i++)
             dp[i][0] = i;
@@ -98,17 +105,16 @@ public:
             int down = max(i-2,1), up = min(i+2, n);
             for (int j = down; j <= up; j++) {
                 if(getbit(u,(i-1)*2) != getbit(v,(j-1)*2) || getbit(u,(i-1)*2+1) != getbit(v,(j-1)*2+1)){
-                ///if (a[i-1] != b[j-1]) {
-                    dp[i][j] = min( 1 + dp[i-1][j],  // deletion
-                                   min(1 + dp[i][j-1],  // insertion
-                                    1 + dp[i-1][j-1])); // replacement
+                    dp[i][j] = min( 1 + dp[i-1][j],
+                                   min(1 + dp[i][j-1],
+                                    1 + dp[i-1][j-1]));
                 }
-                else  dp[i][j] = dp[i-1][j-1];
+                else
+                    dp[i][j] = dp[i-1][j-1];
             }
         }
         return dp[m][n];
     }
-
 
     void init(uint64_t sz) {
         cntHash = 0;
@@ -117,18 +123,21 @@ public:
         stID = new uint32_t[MAXBIT+1];
     }
 
-    int check_approximate(uint32_t  id, uint32_t val) {
+    II check_approximate(uint32_t id, uint32_t val) {
+        int cnt = 0;
         FO (i, stID[id], stID[id+1]) {
             if ((suffix[i] & MIDDLE[1]) == (val & MIDDLE[1]) ||
-               (suffix[i] & MIDDLE[2]) == (val & MIDDLE[2]) ||
-               (suffix[i] & MIDDLE[3]) == (val & MIDDLE[3]) ||
-               (suffix[i] & MIDDLE[4]) == (val & MIDDLE[4]) ||
-               (suffix[i] & MIDDLE[5]) == (val & MIDDLE[5]) ||
-               (suffix[i] & MIDDLE[6]) == (val & MIDDLE[6]) )
+                (suffix[i] & MIDDLE[2]) == (val & MIDDLE[2]) ||
+                (suffix[i] & MIDDLE[3]) == (val & MIDDLE[3]) ||
+                (suffix[i] & MIDDLE[4]) == (val & MIDDLE[4]) ||
+                (suffix[i] & MIDDLE[5]) == (val & MIDDLE[5]) ||
+                (suffix[i] & MIDDLE[6]) == (val & MIDDLE[6]) ) {
+                    cnt++;
                     if (distStringDP(suffix[i], val) <= 2)
-                        return taxoID[i];
+                        return II(taxoID[i], cnt);
+               }
         }
-        return 0;
+        return II(0, cnt);
     }
 
     void read(string file) {
@@ -151,8 +160,6 @@ public:
             uint32_t val[num], taxa[num];
             memset(val, 0, sizeof(val));
             memset(taxa, 0, sizeof(taxa));
-            //FO(i,0,num) ifsSuffix.read((char *) &val[i], sizeof(val[i]));
-            //FO(i,0,num) ifsSuffix.read((char *) &taxa[i], sizeof(taxa[i]));
             ifsSuffix.read((char *) &val, sizeof(val));
             ifsTaxo.read((char *) &taxa, sizeof(taxa));
             FO (i,0,num) {
@@ -166,7 +173,7 @@ public:
     }
 
 };
-/// Variable
+// Variable
 HashTable HT;
 
 inline int get_code(char c) {
@@ -198,32 +205,37 @@ inline uint64_t reverseMask(uint64_t _ikmer, int m_k) {
     return _ikmerR;
 }
 
-int ClassifySequence(int step, string &s, HashTable &HT) {
+II ClassifySequence(string &s, HashTable &HT) {
     int lenSeq = s.size();
     if(lenSeq < 100)
-        return -1;
+        return II(-1, 0);
 
     vector<uint32_t> ans, Vid, Vval;
     uint64_t tt = toNumDNA(s, 0, KMER);
     uint64_t tmp = reverseMask(tt, KMER);
-    if(tmp > tt) tmp = tt;
+    if(tmp > tt)
+        tmp = tt;
     Vid.push_back(tmp >> SHIFTLEFT);
     Vval.push_back(tmp & RIGHT16);
-    FO (i,1,lenSeq-KMER)   {
+
+    FO (i,1,lenSeq-KMER) {
         tt = ((tt & RIGHT31) << 2) | get_code(s[i+31]);
         tmp = reverseMask(tt, KMER);
-        if(tmp > tt) tmp = tt;
+        if (tmp > tt)
+            tmp = tt;
         Vid.push_back(tmp >> SHIFTLEFT);
         Vval.push_back(tmp & RIGHT16);
     }
 
+    int readCom = 0;
     FO (i,0,Vid.size()) {
-        int ok = HT.check_approximate(Vid[i], Vval[i]);
-        if (ok > 0)
-            ans.push_back(ok);
+        II result_match = HT.check_approximate(Vid[i], Vval[i]);
+        readCom += result_match.second;
+        if (result_match.first > 0)
+            ans.push_back(result_match.first);
     }
     if (ans.size() == 0)
-        return -1;
+        return II(-1, readCom);
 
     vector<uint32_t> VGenus, VSpecies;
     for (auto i : ans) {
@@ -250,7 +262,7 @@ int ClassifySequence(int step, string &s, HashTable &HT) {
     }
 
     int cntTaxa = 1, finalTaxa = 0, cntHit = maxx;
-    if (cntHit == 1 && (cntGenus >= 3 || lenSeq >= 800))
+    if (cntHit == 1 && (cntGenus >= 2 || lenSeq >= 500))
         finalTaxa = -1;
     else if(cntHit == 2 && cntGenus >= 4)
         finalTaxa = -1;
@@ -275,15 +287,26 @@ int ClassifySequence(int step, string &s, HashTable &HT) {
             }
         }
     }
-    return finalTaxa;
+    return II(finalTaxa, readCom);
 }
 
 void usage(){
-    cerr << "./CDKAM database nameFamily input output --fasta\n";
+    cerr << "./CDKAM.sh DBname input output --fasta\n Or \n";
+    cerr << "./CDKAM.sh DBname input output --fasta nthread N\n";
 }
 
-int main(int argc, char **argv) {
-    if (argc != 6) { usage(); exit(1); }
+int main (int argc, char **argv) {
+    if (argc != 6 && argc != 8) {
+        usage();
+        exit(1);
+    }
+    int num_threads = 1;
+    if (argc == 8 && string(argv[6]) == "nthread")
+        num_threads = atoi(argv[7]);
+
+    omp_set_num_threads(num_threads);
+    DEBUG(num_threads);
+
 
     ifstream finFGS(argv[2]);
     int valFamily, valGenus, valSpecies, valOrder;
@@ -302,55 +325,122 @@ int main(int argc, char **argv) {
     }
 
 
-
-    /// Read HashTable file
+    // Read HashTable file
     string file(argv[1]);
-    DEBUG("Reading");
+    cerr << "Loading database ..." << endl;
     double main_time = Time::get_time();
     HT.read(file);
     double read_time = Time::get_time() - main_time;
     DEBUG(read_time);
-
-
-    DEBUG("Testing");
     printRam();
+
+
+    cerr << "Start testing" << endl;
     ifstream finReads(argv[3]);
     ofstream fout(argv[4]);
     string mode(argv[5]);
-    Reader RR;
+
+    int formatID = 0;
     if (mode == "--fasta") {
         DEBUG("FASTA");
-        RR.file_format_ = 0;
+        formatID = 0;
     }
     else if (mode == "--fastq") {
         DEBUG("FASTQ");
-        RR.file_format_ = 1;
+        formatID = 1;
     }
 
+    // The priority queue for output is designed to ensure fragment data
+    // is output in the same order it was input
+    auto comparator = [](const OutputData &a, const OutputData &b) {
+        return a.block_id > b.block_id;
+    };
+    std::priority_queue<OutputData, vector<OutputData>, decltype(comparator)>
+    output_queue(comparator);
+    uint64_t next_input_block_id = 0;
+    uint64_t next_output_block_id = 0;
+    omp_lock_t output_lock;
+    omp_init_lock(&output_lock);
+
+    #pragma omp parallel
     {
-        int step = 0;
-        string seq;
-        vector<II> V;
+        Reader RR;
+        RR.file_format_ = formatID;
+        string headID, seq;
+        uint64_t block_id;
+        OutputData out_data;
+
         while(true) {
-            bool ok_read = RR.LoadBlock(finReads, (size_t)3*1024*1024);
+            int threadCom = 0;
+            bool ok_read = false;
+            #pragma omp critical(seqread)
+            {
+                ok_read = RR.LoadBlock(finReads, (size_t)3*1024*1024);
+                block_id = next_input_block_id++;
+            }
+
             if (! ok_read)
                 break;
+
+            // Reset ostringstream
+            ostringstream oss;
+            oss.str("");
             while (true) {
-                auto valid_fragment = RR.NextSequence(seq);
+                auto valid_fragment = RR.NextSequence(headID, seq);
                 if (! valid_fragment)
                     break;
 
-                step++;
-                int ans = ClassifySequence(step, seq, HT);
-                fout << step << "\t" << seq.size() << "\t" << ans << "\n";
+                II ans = ClassifySequence(seq, HT);
+                threadCom += ans.second;
+                oss << headID << "\t" << seq.size() << "\t" << ans.first << "\n";
+            }
+
+            #pragma omp atomic
+            globalCom += threadCom;
+
+            out_data.block_id = block_id;
+            out_data.dataString.assign(oss.str());
+
+            #pragma omp critical(output_queue)
+            {
+                output_queue.push(out_data);
+            }
+
+            bool output_loop = true;
+            while (output_loop) {
+                #pragma omp critical(output_queue)
+                {
+                    output_loop = ! output_queue.empty();
+                    if (output_loop) {
+                        out_data = output_queue.top();
+                        if (out_data.block_id == next_output_block_id) {
+                            output_queue.pop();
+                            // Acquiring output lock obligates thread to print out
+                            // next output data block, contained in out_data
+                            omp_set_lock(&output_lock);
+                            next_output_block_id++;
+                        }
+                    else
+                        output_loop = false;
+                    }
+                }
+            if (! output_loop)
+                break;
+            // Past this point in loop, we know lock is set
+
+            fout << out_data.dataString;
+            omp_unset_lock(&output_lock);
             }
         }
-    }
+    } // end parallel block
+
+    omp_destroy_lock(&output_lock);
+
     double test_time = Time::get_time() - main_time;
     DEBUG(test_time);
     finReads.close();
     fout.close();
-    //*/
+
 
     return 0;
 }
