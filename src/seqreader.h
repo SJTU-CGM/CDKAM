@@ -32,8 +32,8 @@ public:
 
 
     bool LoadBlock(istream &ifs, size_t block_size);
-    bool NextSequence(string &seq);
-    bool ReadNextSequence(std::istream &is, string &seq, std::string &str_buffer, int file_format);
+    bool NextSequence(string &headID, string &seq);
+    bool ReadNextSequence(std::istream &is, string &headID, string &seq, std::string &str_buffer, int file_format);
 };
 
 #endif
