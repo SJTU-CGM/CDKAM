@@ -9,7 +9,14 @@
 */
 
 #include "seqreader.h"
+#include <sysexits.h>
+#include <err.h>
+#include <fcntl.h>
 
+void StripString(string &str) {
+  while (isspace(str.back()))
+    str.pop_back();
+}
 
 Reader::Reader(){
     str_buffer_.reserve(8192);
@@ -33,7 +40,6 @@ bool Reader::LoadBlock(istream &ifs, size_t block_size){
     ifs.read(block_buffer_, block_size);
     if (! ifs && ifs.gcount() <= 0)
         return false;
-
 
     str_buffer_.assign(block_buffer_, ifs.gcount());
     ss_ << str_buffer_;
@@ -66,22 +72,29 @@ bool Reader::LoadBlock(istream &ifs, size_t block_size){
     return true;
 }
 
-bool Reader::NextSequence(string &seq){
-    return ReadNextSequence(ss_, seq, str_buffer_, file_format_);
+bool Reader::NextSequence(string &headID, string &seq){
+    return ReadNextSequence(ss_, headID, seq, str_buffer_, file_format_);
 }
 
-bool Reader::ReadNextSequence(std::istream &is, string &seq, std::string &str_buffer, int file_format){
+bool Reader::ReadNextSequence(std::istream &is, string &headID, string &seq, std::string &str_buffer, int file_format){
     if (! getline(is, str_buffer))
         return false;
+    StripString(str_buffer);
 
-    if (file_format == FASTQ) {
-        if (str_buffer.empty()) // Allow empty line to end file
+    auto first_whitespace_ch = str_buffer.find_first_of(" \t\r", 1);
+    auto substr_len = first_whitespace_ch;
+    if (substr_len != std::string::npos)
+        substr_len--;
+    if (str_buffer.size() > 1)
+        headID.assign(str_buffer, 1, substr_len);
+    else
         return false;
-    }
+
 
     if (file_format == FASTQ) {
         if (! getline(is, str_buffer))
             return false;
+        StripString(str_buffer);
         seq.assign(str_buffer);
         if (! getline(is, str_buffer))  //  + line, discard
             return false;
@@ -93,10 +106,9 @@ bool Reader::ReadNextSequence(std::istream &is, string &seq, std::string &str_bu
         while (is && is.peek() != '>') {
             if (! getline(is, str_buffer))
                 return ! seq.empty();
-
+        StripString(str_buffer);
         seq.append(str_buffer);
         }
     }
     return true;
 }
-
