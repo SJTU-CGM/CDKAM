@@ -68,9 +68,8 @@ namespace Time{
 /*************PARAMETER******************/
 const int KMER = 32, PREFIX = 14, SHIFT = 2*PREFIX, SHIFTLEFT = 64 - (2*PREFIX);
 uint64_t RIGHT31 = 4611686018427387903ULL;
-uint32_t RIGHT16 = 4294967295, MIDDLE[8], MAXBIT = 1<<(2*PREFIX);
+uint32_t RIGHT16 = 4294967295, MAXBIT = 1<<(2*PREFIX);
 int nameFamily[3000005], nameGenus[3000005];
-LL globalCom = 0;
 /****************************************/
 
 struct OutputData {
@@ -81,7 +80,7 @@ struct OutputData {
 
 class HashTable {
 private:
-    uint32_t *stID, *suffix, *taxoID;
+    uint32_t *stID, *suffix, *taxoID, MIDDLE[8];
     size_t cntHash;
 
 public:
@@ -105,9 +104,8 @@ public:
             int down = max(i-2,1), up = min(i+2, n);
             for (int j = down; j <= up; j++) {
                 if(getbit(u,(i-1)*2) != getbit(v,(j-1)*2) || getbit(u,(i-1)*2+1) != getbit(v,(j-1)*2+1)){
-                    dp[i][j] = min( 1 + dp[i-1][j],
-                                   min(1 + dp[i][j-1],
-                                    1 + dp[i-1][j-1]));
+                    dp[i][j] = 1+ min(dp[i-1][j],
+                                   min(dp[i][j-1], dp[i-1][j-1]));
                 }
                 else
                     dp[i][j] = dp[i-1][j-1];
@@ -117,14 +115,21 @@ public:
     }
 
     void init(uint64_t sz) {
+        FOR (k,1,6) {
+            MIDDLE[k] = 0;
+            FO (i,10,16) if(i != 9+k) {
+                MIDDLE[k] = onbit(MIDDLE[k], 2*i);
+                MIDDLE[k] = onbit(MIDDLE[k], 2*i+1);
+            }
+        }
+
         cntHash = 0;
         suffix = new uint32_t[sz+1];
         taxoID = new uint32_t[sz+1];
         stID = new uint32_t[MAXBIT+1];
     }
 
-    II check_approximate(uint32_t id, uint32_t val) {
-        int cnt = 0;
+    int check_approximate(uint32_t id, uint32_t val) {
         FO (i, stID[id], stID[id+1]) {
             if ((suffix[i] & MIDDLE[1]) == (val & MIDDLE[1]) ||
                 (suffix[i] & MIDDLE[2]) == (val & MIDDLE[2]) ||
@@ -132,12 +137,11 @@ public:
                 (suffix[i] & MIDDLE[4]) == (val & MIDDLE[4]) ||
                 (suffix[i] & MIDDLE[5]) == (val & MIDDLE[5]) ||
                 (suffix[i] & MIDDLE[6]) == (val & MIDDLE[6]) ) {
-                    cnt++;
                     if (distStringDP(suffix[i], val) <= 2)
-                        return II(taxoID[i], cnt);
+                        return taxoID[i];
                }
         }
-        return II(0, cnt);
+        return 0;
     }
 
     void read(string file) {
@@ -205,10 +209,10 @@ inline uint64_t reverseMask(uint64_t _ikmer, int m_k) {
     return _ikmerR;
 }
 
-II ClassifySequence(string &s, HashTable &HT) {
+int ClassifySequence(string &s, HashTable &HT) {
     int lenSeq = s.size();
     if(lenSeq < 100)
-        return II(-1, 0);
+        return -1;
 
     vector<uint32_t> ans, Vid, Vval;
     uint64_t tt = toNumDNA(s, 0, KMER);
@@ -227,15 +231,13 @@ II ClassifySequence(string &s, HashTable &HT) {
         Vval.push_back(tmp & RIGHT16);
     }
 
-    int readCom = 0;
     FO (i,0,Vid.size()) {
-        II result_match = HT.check_approximate(Vid[i], Vval[i]);
-        readCom += result_match.second;
-        if (result_match.first > 0)
-            ans.push_back(result_match.first);
+        int result_match = HT.check_approximate(Vid[i], Vval[i]);
+        if (result_match > 0)
+            ans.push_back(result_match);
     }
     if (ans.size() == 0)
-        return II(-1, readCom);
+        return -1;
 
     vector<uint32_t> VGenus, VSpecies;
     for (auto i : ans) {
@@ -287,7 +289,7 @@ II ClassifySequence(string &s, HashTable &HT) {
             }
         }
     }
-    return II(finalTaxa, readCom);
+    return finalTaxa;
 }
 
 void usage(){
@@ -303,7 +305,6 @@ int main (int argc, char **argv) {
     int num_threads = 1;
     if (argc == 8 && string(argv[6]) == "nthread")
         num_threads = atoi(argv[7]);
-
     omp_set_num_threads(num_threads);
     DEBUG(num_threads);
 
@@ -316,26 +317,7 @@ int main (int argc, char **argv) {
     }
     finFGS.close();
 
-    FOR (k,1,6) {
-        MIDDLE[k] = 0;
-        FO (i,10,16) if(i != 9+k) {
-            MIDDLE[k] = onbit(MIDDLE[k], 2*i);
-            MIDDLE[k] = onbit(MIDDLE[k], 2*i+1);
-        }
-    }
 
-
-    // Read HashTable file
-    string file(argv[1]);
-    cerr << "Loading database ..." << endl;
-    double main_time = Time::get_time();
-    HT.read(file);
-    double read_time = Time::get_time() - main_time;
-    DEBUG(read_time);
-    printRam();
-
-
-    cerr << "Start testing" << endl;
     ifstream finReads(argv[3]);
     ofstream fout(argv[4]);
     string mode(argv[5]);
@@ -349,7 +331,22 @@ int main (int argc, char **argv) {
         DEBUG("FASTQ");
         formatID = 1;
     }
+    else{
+        usage();
+        exit(1);
+    }
 
+
+    string file(argv[1]);
+    cerr << "Loading database ..." << endl;
+    double main_time = Time::get_time();
+    HT.read(file);
+    double read_time = Time::get_time() - main_time;
+    DEBUG(read_time);
+    printRam();
+
+
+    cerr << "Start testing" << endl;
     // The priority queue for output is designed to ensure fragment data
     // is output in the same order it was input
     auto comparator = [](const OutputData &a, const OutputData &b) {
@@ -371,7 +368,6 @@ int main (int argc, char **argv) {
         OutputData out_data;
 
         while(true) {
-            int threadCom = 0;
             bool ok_read = false;
             #pragma omp critical(seqread)
             {
@@ -390,13 +386,9 @@ int main (int argc, char **argv) {
                 if (! valid_fragment)
                     break;
 
-                II ans = ClassifySequence(seq, HT);
-                threadCom += ans.second;
-                oss << headID << "\t" << seq.size() << "\t" << ans.first << "\n";
+                int ans = ClassifySequence(seq, HT);
+                oss << headID << "\t" << seq.size() << "\t" << ans << "\n";
             }
-
-            #pragma omp atomic
-            globalCom += threadCom;
 
             out_data.block_id = block_id;
             out_data.dataString.assign(oss.str());
