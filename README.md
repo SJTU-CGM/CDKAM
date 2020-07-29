@@ -48,7 +48,14 @@ $ ./install.sh
 
 **5) Running CDKAM**
 
-It might take 6-8 hours for downloading the reference genomes (about 85 GB), and 24-30 hours for building the database.
+It might take 6-8 hours for downloading the reference genomes (about 85 GB), and 24-30 hours for building the database.\
+To build CDKAM with different value of X, please change the value of variable RANGE in /src/compress.cpp file as follows:\
+RANGE = 5 for X = 20%\
+RANGE = 7 for X = 15%\
+RANGE = 10 for X = 10%\
+RANGE = 20 for X = 5%\
+The default version of CDKAM selects X = 15% with RANGE = 7.
+
 
 - Downloading database:\
 *Standard installation with archaea, bacteria and viral reference genomes*\
@@ -60,7 +67,7 @@ mkdir $DBname\
 ./download --download-library bacteria --db $DBname\
 ./download --download-library fungi --db $DBname\
 ./download --download-library viral --db $DBname\
-./download --download-library human --db $DBname\
+./download --download-library human --db $DBname
 
 - Building database:\
 ./build_database.sh $DBname
@@ -73,11 +80,11 @@ Using --fasta if the input is FASTA file, --fastq if the input is FASTQ file.
 ./CDKAM.sh $DBname input output --fasta/--fastq nthread N\
 where N is the number of threads.
 
-- CDKAM also support classification on Exact Matching mode:\
+- CDKAM also supports classification on Exact Matching mode:\
 ./CDKAM_EM.sh $DBname input output --fasta/--fastq \
 
 - Running translation:\
-./translate $DBname input output\
+./translate $DBname input output
 ,where input is the result of the previous classification process.
 
 **6) Output format**
