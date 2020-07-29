@@ -12,21 +12,24 @@ Classification tool using Discriminative K-mers and Approximate Matching algorit
 - Linux operation system
 - Memory: 70 GB
 - Disk space: 200 GB
-- Perl 5.8.5 (or up) and GCC 6.3.1 (or up).
+- Perl 5.8.5 (or up) and GCC 4.8.5 (or up).
 - Dustmasker https://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/src/app/dustmasker/. 
 
 It is suggested to install BLAST+ (ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/), which has already included dustmasker.
 Low-complexity sequences, e.g. "ACACACACACACACACA", "ATATATATATATATATAT" are known to occur in many different organisms and are typically less informative for use in alignments. The masked regions are not processed further by CDKAM.
 
+
 **3) Datasets** 
 
 Datasets can be found at OneDrive: 
 - The first simulated dataset
-https://1drv.ms/u/s!AvI5WFKEnJrGc_UeO5FW-3rQECI?e=Mvg9hI
+https://1drv.ms/u/s!AvI5WFKEnJrGeQlkB-KTexns4m8?e=lxVWKy
 - The second simulated dataset
-https://1drv.ms/u/s!AvI5WFKEnJrGdOe0e75dHgZ3nos?e=5HUtny
+https://1drv.ms/u/s!AvI5WFKEnJrGeu0OzwT1556LlG0?e=ThGos7
 - The third simulated dataset
-https://1drv.ms/u/s!AvI5WFKEnJrGdbQ3ACJW4aPnTdU?e=8V4qq3
+https://1drv.ms/u/s!AvI5WFKEnJrGe6q7R76aKHVx29k?e=bg2ogf
+- The fourth simulated dataset
+https://1drv.ms/u/s!AvI5WFKEnJrGfDYHCWoOfBN06zs?e=g3m7Zz
 - A sample of sequencing Nanopore MinION data
 https://www.st-va.ncbi.nlm.nih.gov/bioproject/PRJNA493153
 - Zymo mock dataset:
@@ -34,13 +37,19 @@ https://github.com/LomanLab/mockcommunity
 
 **4) Installation**
 
-- First, download the package of the latest CDKAM release: https://github.com/SJTU-CGM/CDKAM
+- Firstly, download the package of the latest CDKAM release: https://github.com/SJTU-CGM/CDKAM
 
-- Go in the extracted sub-directory "CDKAM". 
+- Secondly, set up the execution permission for the CDKAM folder.\
+chmod +x -R CDKAM
+
+- Finally, go in the extracted sub-directory "CDKAM". 
 Then:\
 $ ./install.sh
 
 **5) Running CDKAM**
+
+It might take 6-8 hours for downloading the reference genomes (about 85 GB), and 24-30 hours for building the database.
+
 - Downloading database:\
 *Standard installation with archaea, bacteria and viral reference genomes*\
 ./download --standard --db $DBname\
@@ -49,14 +58,23 @@ mkdir $DBname\
 ./download_taxonomy.sh $DBname\
 ./download --download-library archaea --db $DBname\
 ./download --download-library bacteria --db $DBname\
-......
+./download --download-library fungi --db $DBname\
+./download --download-library viral --db $DBname\
+./download --download-library human --db $DBname\
 
 - Building database:\
 ./build_database.sh $DBname
 
-- Running classification:\
+- Running classification by default (using approximate matching strategies):\
 ./CDKAM.sh $DBname input output --fasta/--fastq \
 Using --fasta if the input is FASTA file, --fastq if the input is FASTQ file.
+
+- Multi-threading:\
+./CDKAM.sh $DBname input output --fasta/--fastq nthread N\
+where N is the number of threads.
+
+- CDKAM also support classification on Exact Matching mode:\
+./CDKAM_EM.sh $DBname input output --fasta/--fastq \
 
 - Running translation:\
 ./translate $DBname input output\
@@ -73,17 +91,17 @@ Example:
 - *3	886	590*
 
 Translation mode\
-(Read ID) (Genus taxonomy ID) (Genus taxonomy ID)  (G) Scientific Name at Genus level      
+(Read ID) (Genus taxonomy ID) (Genus taxonomy ID)  (AG) Full taxomomic path to Genus level      
 or \
-(Read ID) (Genus taxonomy ID) (Species taxonomy ID)  (S) Scientific Name at Genus level | Scientific Name at Species level
+(Read ID) (Genus taxonomy ID) (Species taxonomy ID)  (AS) Full taxomomic path to Species level     
 
 Example:
 - *1	-1	-1*
-- *2	816	28116	 (S) Bacteroides | Bacteroides ovatus*
-- *3	590	590	 (G) Salmonella*
+- *2	816	28116	 (AS)	(P) Bacteroidetes | (C) Bacteroidia | (O) Bacteroidales | (F) Bacteroidaceae | (G) Bacteroides | (S) Bacteroides ovatus*
+- *3	590	590	 (AG)	(P) Proteobacteria | (C) Gammaproteobacteria | (O) Enterobacterales | (F) Enterobacteriaceae | (G) Salmonella*
 
-(S) indicates that the read is assigned to a taxonomy ID at Species level\
-(G) indicates that the read is assigned to a taxonomy ID at Genus level
+(AS) indicates that the read is assigned to a taxonomy ID at Species level\
+(AG) indicates that the read is assigned to a taxonomy ID at Genus level
 
 
 
