@@ -39,10 +39,7 @@ https://github.com/LomanLab/mockcommunity
 
 - Firstly, download the package of the latest CDKAM release: https://github.com/SJTU-CGM/CDKAM
 
-- Secondly, set up the execution permission for the CDKAM folder.\
-chmod +x -R CDKAM
-
-- Finally, go in the extracted sub-directory "CDKAM". 
+- Then, go in the extracted sub-directory "CDKAM". 
 Then:\
 $ ./install.sh
 
@@ -80,11 +77,11 @@ Using --fasta if the input is FASTA file, --fastq if the input is FASTQ file.
 ./CDKAM.sh $DBname input output --fasta/--fastq nthread N\
 where N is the number of threads.
 
-- CDKAM also supports classification on Exact Matching mode:\
-./CDKAM_EM.sh $DBname input output --fasta/--fastq \
+- CDKAM also supports classification in Exact Matching mode:\
+./CDKAM_EM.sh $DBname input output --fasta/--fastq 
 
 - Running translation:\
-./translate $DBname input output
+./translate $DBname input output\
 ,where input is the result of the previous classification process.
 
 **6) Output format**
