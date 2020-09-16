@@ -31,7 +31,7 @@ do
 	fi
 done
 
-if [ ! -e $LDIR/$1/taxanomy/nodes.dmp ]; then
+if [ ! -e $LDIR/$1/taxonomy/nodes.dmp ]; then
 	echo "The taxonomy tree is missing. Please run the command   ./download_taxonomy.sh $1"
 	exit 0
 fi
