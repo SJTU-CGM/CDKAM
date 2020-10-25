@@ -8,29 +8,12 @@
 */
 
 #include <bits/stdc++.h>
-#define LL long long
-#define ULL unsigned long long
+#include "helpers.h"
 #define FOR(i,a,b) for(size_t i=a;i<=b;i++)
 #define FO(i,a,b) for(size_t i=a;i<b;i++)
-#define DEBUG(a) {cerr << #a << ": " << (a) << endl; fflush(stderr); }
-
 using namespace std;
 
-typedef pair<int, int> II;
-typedef pair<string, int> IIS;
-typedef pair<string, II> IISS;
-#define PRINTLOG 0
-
-
-#include <sys/time.h>
-#include <sys/resource.h>
-inline void printRam() {
-    struct rusage ru;
-    getrusage(RUSAGE_SELF, &ru);
-    cerr << "Max ram (in kilobytes): " << ru.ru_maxrss << endl;
-}
-
-
+#define PRINTLOG 1
 
 const int KMER = 32, TWO22 = 4194304,  BIT11 = 4194303, RANGE = 7, LIMITgenus = 3;
 const uint64_t LEFT31 = 4611686018427387903ULL;
@@ -48,7 +31,7 @@ public:
     HashTable(){};
 
     void init() {
-        FO (i, 0, TWO22) {
+        for (size_t i = 0; i < TWO22; ++i) {
             mTable[i].clear();
             mTable[i].shrink_to_fit();
         }
@@ -61,20 +44,22 @@ public:
     }
 
     void sortData() {
-        FO (i, 0, TWO22) if(mTable[i].size() >= 3) {
-            sort(mTable[i].begin(), mTable[i].end());
-            Vtmp.clear();
-            Vtmp.shrink_to_fit();
-            Vtmp.push_back(mTable[i][0]);
-            Vtmp.push_back(mTable[i][1]);
-            for (size_t j = 2; j < mTable[i].size(); j++) {
-                if (mTable[i][j] != mTable[i][j-2]) {
-                    Vtmp.push_back(mTable[i][j]);
+        for (size_t i = 0; i < TWO22; ++i) {
+            if(mTable[i].size() >= 3) {
+                sort(mTable[i].begin(), mTable[i].end());
+                Vtmp.clear();
+                Vtmp.shrink_to_fit();
+                Vtmp.push_back(mTable[i][0]);
+                Vtmp.push_back(mTable[i][1]);
+                for (size_t j = 2; j < mTable[i].size(); ++j) {
+                    if (mTable[i][j] != mTable[i][j-2]) {
+                        Vtmp.push_back(mTable[i][j]);
+                    }
                 }
+                mTable[i].clear();
+                mTable[i].shrink_to_fit();
+                mTable[i] = Vtmp;
             }
-            mTable[i].clear();
-            mTable[i].shrink_to_fit();
-            mTable[i] = Vtmp;
         }
     }
 
@@ -96,56 +81,34 @@ vector<uint32_t> Vtaxa;
 HashTable HT_Family, HT_Genus;
 
 
-inline int get_code(char c) {
-    if (c == 'A') return 0;
-    if (c == 'C') return 1;
-    if (c == 'G') return 2;
-    if (c == 'T') return 3;
-    return 0;
-}
-
-inline char print_code(int c) {
-    if (c == 0) return 'A';
-    if (c == 1) return 'C';
-    if (c == 2) return 'G';
-    if (c == 3) return 'T';
-    return 'N';
-}
-
-int toNum(string s) {
-    int ans = 0;
-    for(int i = 0; i < s.size(); i++)
-        ans = ans*10 + s[i] - 48;
-    return ans;
-}
-
-uint64_t toNumDNA(string &s, int a, int len) {
-    uint64_t ans = 0;
-    for (int i = a; i < a+len; i++) {
-        if(s[i] == 'x') return 0;
-        ans <<= 2;
-        ans |= get_code(s[i]);
+void convertUpperCase(string &s) {
+    /// all are uppercase
+    for (size_t i = 0; i < s.size(); ++i) {
+        if(s[i] >= 'a' && s[i] <= 'z' && s[i] != 'x')
+            s[i] += 'A'-'a';
     }
-    return ans;
 }
 
-inline uint64_t reverseMask3(uint64_t _ikmer, int m_k) {
-    uint64_t _ikmerR = _ikmer;
-    // m_k = size of Kmer
-    // The following 6 lines come from Jellyfish source code
-    _ikmerR = ((_ikmerR >> 2)  & 0x3333333333333333UL) | ((_ikmerR & 0x3333333333333333UL) << 2);
-    _ikmerR = ((_ikmerR >> 4)  & 0x0F0F0F0F0F0F0F0FUL) | ((_ikmerR & 0x0F0F0F0F0F0F0F0FUL) << 4);
-    _ikmerR = ((_ikmerR >> 8)  & 0x00FF00FF00FF00FFUL) | ((_ikmerR & 0x00FF00FF00FF00FFUL) << 8);
-    _ikmerR = ((_ikmerR >> 16) & 0x0000FFFF0000FFFFUL) | ((_ikmerR & 0x0000FFFF0000FFFFUL) << 16);
-    _ikmerR = ( _ikmerR >> 32                        ) | (_ikmerR                        << 32);
-    _ikmerR = (((uint64_t)-1) - _ikmerR) >> (64 - (m_k << 1));
-    return _ikmerR;
+void insertKmerIntoTWO22Sets(uint64_t &tmp, const uint32_t speciesTID, const int flag) {
+    if(tmp == 0) return;
+
+    uint64_t tmp2 = reverseMask3(tmp, KMER);
+    if(tmp > tmp2) tmp = tmp2;
+
+    uint64_t setID, val;
+    setID = tmp & BIT11;
+    val = tmp >> 22;
+    if (S[setID].find(val) == S[setID].end()) {
+        S[setID].insert(val);
+        VGkmer.push_back(tmp);
+        Vtaxa.push_back(speciesTID);
+        if(flag) VPFamily.push_back(tmp);
+    }
 }
 
-
-void solveTaxa(uint32_t speciesID, int id, vector<IIS> &vectorSpeciesList, int flag) {
+void solveTaxa(const uint32_t speciesTID, const int stepID, vector<IIS> &vectorSpeciesList, const int flag) {
     LL numKmerOfSpecies = 0;
-    FOR (i, 0, TWO22) {
+    for (size_t i = 0; i < TWO22; ++i) {
         if(!S[i].empty()) S[i].clear();
     }
     for (auto i : vectorSpeciesList) {
@@ -155,58 +118,28 @@ void solveTaxa(uint32_t speciesID, int id, vector<IIS> &vectorSpeciesList, int f
 
         while (getline(fin2, s)) {
             if (s[0] == '>' && genome.size() > 0) {
-                /// all are uppercase
-                FO (i,0,genome.size()) {
-                    if(genome[i] >= 'a' && genome[i] <= 'z' && genome[i] != 'x')
-                        genome[i] += 'A'-'a';
-                }
-                uint64_t group, tmp, id, val;
-                FO (i, 0, genome.size() - KMER) {
-                    tmp = toNumDNA(genome, i, KMER);
-                    if (tmp == 0) continue;
-                    uint64_t tmp2 = reverseMask3(tmp, KMER);
-                    if(tmp > tmp2) tmp = tmp2;
+                convertUpperCase(genome);
 
-                    id = tmp & BIT11;
-                    val = tmp >> 22;
-                    if (S[id].find(val) == S[id].end()) {
-                        S[id].insert(val);
-                        VGkmer.push_back(tmp);
-                        Vtaxa.push_back(speciesID);
-                        if(flag)
-                            VPFamily.push_back(tmp);
-                    }
+                uint64_t tmp;
+                for (size_t i = 0; i < genome.size() - KMER; ++i) {
+                    tmp = toNumDNA(genome, i, KMER);
+                    insertKmerIntoTWO22Sets(tmp, speciesTID, flag);
                 }
                 numKmerOfSpecies += genome.size() - KMER;
 
-                /// reset size = 0
-                genome = "";
+                genome = ""; /// reset size = 0
             }
             else genome += s;
         }
 
         {
                 /// last sequence
-                FO (i, 0, genome.size()) {
-                    if(genome[i] >= 'a' && genome[i] <= 'z' && genome[i] != 'x')
-                        genome[i] += 'A'-'a';
-                }
-                uint64_t group, tmp, id, val;
-                FO (i, 0, genome.size() - KMER) {
-                    tmp = toNumDNA(genome, i, KMER);
-                    if(tmp == 0) continue;
-                    uint64_t tmp2 = reverseMask3(tmp, KMER);
-                    if(tmp > tmp2) tmp = tmp2;
+                convertUpperCase(genome);
 
-                    id = tmp & BIT11;
-                    val = tmp >> 22;
-                    if (S[id].find(val) == S[id].end()) {
-                        S[id].insert(val);
-                        VGkmer.push_back(tmp);
-                        Vtaxa.push_back(speciesID);
-                        if(flag)
-                            VPFamily.push_back(tmp);
-                    }
+                uint64_t tmp;
+                for (size_t i = 0; i < genome.size() - KMER; ++i) {
+                    tmp = toNumDNA(genome, i, KMER);
+                    insertKmerIntoTWO22Sets(tmp, speciesTID, flag);
                 }
                 numKmerOfSpecies += genome.size() - KMER;
         }
@@ -214,14 +147,17 @@ void solveTaxa(uint32_t speciesID, int id, vector<IIS> &vectorSpeciesList, int f
     }
     sumKMERGenome += numKmerOfSpecies;
     if (PRINTLOG)
-        cerr << "step = " << id  << " SpeciesID = " << speciesID << "  :  " << numKmerOfSpecies << "  " << VGkmer.size() << endl;
+        cerr << "step = " << stepID  << " SpeciesID = " << speciesTID << "  :  " << numKmerOfSpecies << "  " << VGkmer.size() << endl;
 }
 
-void solveGenus(int Family, int Genus, int id, vector<IIS> &vectorGenusList, ofstream &foutF, ofstream &ofs) {
+void solveGenus(const int familyTID, const int genusTID, const int stepID, vector<IIS> &vectorGenusList, ofstream &foutF, ofstream &ofs) {
+    bool isFamilyFlag = false;
+    if (stepID <= LIMITgenus) isFamilyFlag = true;
+
     map<int, int> mapTaxa;
     int cntTaxa = 0, iVtaxa[20000];
     map<int, int> freqSpecies;
-    vector<II> Vtmp;
+    vector<II> filesInSpecies;
     vector<IIS> vectorSpecies[20000];
     VGkmer.clear(); VGkmer.shrink_to_fit();
     Vtaxa.clear(); Vtaxa.shrink_to_fit();
@@ -233,10 +169,10 @@ void solveGenus(int Family, int Genus, int id, vector<IIS> &vectorGenusList, ofs
     }
     /// sorting vectorSpecies according to the size
     for (auto i : freqSpecies) {
-        Vtmp.push_back(II(i.second, i.first));
+        filesInSpecies.push_back(II(i.second, i.first));
     }
-    sort(Vtmp.begin(), Vtmp.end(), greater<II> ());
-    for (auto i : Vtmp) {
+    sort(filesInSpecies.begin(), filesInSpecies.end(), greater<II> ());
+    for (auto i : filesInSpecies) {
         int valSpecies = i.second;
         mapTaxa[valSpecies] = ++cntTaxa;
         iVtaxa[cntTaxa] = valSpecies;
@@ -248,17 +184,17 @@ void solveGenus(int Family, int Genus, int id, vector<IIS> &vectorGenusList, ofs
         vectorSpecies[mapTaxa[val]].push_back(IIS(file, val));
     }
 
+
     /** FoutF print */
     FOR (i,1,cntTaxa) {
-        foutF << Family << " " << Genus  << " " << iVtaxa[i] << endl;
+        foutF << familyTID << " " << genusTID  << " " << iVtaxa[i] << endl;
     }
     /** END */
 
+
     FOR (i,1,cntTaxa) {
-        if (id <= LIMITgenus)
-            solveTaxa(iVtaxa[i], i, vectorSpecies[i], 1);
-        else
-            solveTaxa(iVtaxa[i], i, vectorSpecies[i], 0);
+        if (isFamilyFlag) solveTaxa(iVtaxa[i], i, vectorSpecies[i], 1);
+        else              solveTaxa(iVtaxa[i], i, vectorSpecies[i], 0);
     }
 
     /**  HT_Genus */
@@ -270,7 +206,7 @@ void solveGenus(int Family, int Genus, int id, vector<IIS> &vectorGenusList, ofs
 
 
     int cntans = 0;
-    if (id <= LIMITgenus) {
+    if (isFamilyFlag) {
         for (size_t i = 0; i < VGkmer.size(); i += RANGE) {
             size_t pos = i;
             int ok = 0;
@@ -279,14 +215,14 @@ void solveGenus(int Family, int Genus, int id, vector<IIS> &vectorGenusList, ofs
                 if (pos >= VGkmer.size()) break;
                 if (HT_Genus.check_freq(VGkmer[pos]) == 1) { ok = 1;  break; }
             }
-            if (ok == 0) { pos = i; Vtaxa[pos] = Genus; }
+            if (ok == 0) { pos = i; Vtaxa[pos] = genusTID; }
 
             ofs.write((char *) &VGkmer[pos], sizeof(VGkmer[pos]));
             ofs.write((char *) &Vtaxa[pos], sizeof(Vtaxa[pos]));
             cntans++;
         }
     }
-    else{
+    else {
         for (size_t i = 0; i < VGkmer.size(); i += RANGE) {
             size_t pos = i;
             int ok = 0;
@@ -307,11 +243,11 @@ void solveGenus(int Family, int Genus, int id, vector<IIS> &vectorGenusList, ofs
 
 
     if(PRINTLOG)
-        cerr << "GENUS = " <<  Genus << " have " << cntTaxa << " taxas.    Num of KMERs:  " << cntans << " . VPFamily size = " << VPFamily.size() << "\n\n";
+        cerr << "GENUS = " <<  genusTID << " have " << cntTaxa << " taxas.    Num of KMERs:  " << cntans << " . VPFamily size = " << VPFamily.size() << "\n\n";
     if(PRINTLOG) printRam();
 }
 
-void solveGenusHuman(uint32_t speciesID, vector<string> &humanFileList, ofstream &foutF, ofstream &ofs) {
+void solveGenusHuman(uint32_t speciesTID, vector<string> &humanFileList, ofstream &foutF, ofstream &ofs) {
     LL numKmerOfSpecies = 0;
     VPFamily.clear(); VPFamily.shrink_to_fit();
     Vtaxa.clear(); Vtaxa.shrink_to_fit();
@@ -321,7 +257,7 @@ void solveGenusHuman(uint32_t speciesID, vector<string> &humanFileList, ofstream
     int step = 0;
     for (auto file : humanFileList) {
         step++;
-        FOR (i, 0, TWO22) {
+        for (size_t i = 0; i < TWO22; ++i) {
             if(!S[i].empty()) S[i].clear();
         }
         ifstream fin2(file.c_str());
@@ -329,25 +265,12 @@ void solveGenusHuman(uint32_t speciesID, vector<string> &humanFileList, ofstream
 
         while (getline(fin2, s)) {
             if (s[0] == '>' && genome.size() > 0) {
-                /// all are uppercase
-                FO (i,0,genome.size()) {
-                    if(genome[i] >= 'a' && genome[i] <= 'z' && genome[i] != 'x')
-                        genome[i] += 'A'-'a';
-                }
-                uint64_t group, tmp, id, val;
-                FO (i, 0, genome.size() - KMER) {
-                    tmp = toNumDNA(genome, i, KMER);
-                    if (tmp == 0) continue;
-                    uint64_t tmp2 = reverseMask3(tmp, KMER);
-                    if(tmp > tmp2) tmp = tmp2;
+                convertUpperCase(genome);
 
-                    id = tmp & BIT11;
-                    val = tmp >> 22;
-                    if (S[id].find(val) == S[id].end()) {
-                        S[id].insert(val);
-                        VPFamily.push_back(tmp);
-                        Vtaxa.push_back(speciesID);
-                    }
+                uint64_t tmp;
+                for (size_t i = 0; i < genome.size() - KMER; ++i) {
+                    tmp = toNumDNA(genome, i, KMER);
+                    insertKmerIntoTWO22Sets(tmp, speciesTID, 0);
                 }
                 numKmerOfSpecies += genome.size() - KMER;
 
@@ -359,24 +282,12 @@ void solveGenusHuman(uint32_t speciesID, vector<string> &humanFileList, ofstream
 
         {
                 /// last sequence
-                FO (i, 0, genome.size()) {
-                    if(genome[i] >= 'a' && genome[i] <= 'z' && genome[i] != 'x')
-                        genome[i] += 'A'-'a';
-                }
-                uint64_t group, tmp, id, val;
-                FO (i, 0, genome.size() - KMER) {
-                    tmp = toNumDNA(genome, i, KMER);
-                    if(tmp == 0) continue;
-                    uint64_t tmp2 = reverseMask3(tmp, KMER);
-                    if(tmp > tmp2) tmp = tmp2;
+                convertUpperCase(genome);
 
-                    id = tmp & BIT11;
-                    val = tmp >> 22;
-                    if (S[id].find(val) == S[id].end()) {
-                        S[id].insert(val);
-                        VPFamily.push_back(tmp);
-                        Vtaxa.push_back(speciesID);
-                    }
+                uint64_t tmp;
+                for (size_t i = 0; i < genome.size() - KMER; ++i) {
+                    tmp = toNumDNA(genome, i, KMER);
+                    insertKmerIntoTWO22Sets(tmp, speciesTID, 0);
                 }
                 numKmerOfSpecies += genome.size() - KMER;
         }
@@ -399,19 +310,19 @@ void solveGenusHuman(uint32_t speciesID, vector<string> &humanFileList, ofstream
     sumFinalKMER += cntans;
     sumSet += VPFamily.size();
     if(PRINTLOG)
-        cerr << "Human " <<  speciesID << " have Num of KMERs:  " << cntans << " . VPFamily size = " << VPFamily.size() << "\n\n";
+        cerr << "Human " <<  speciesTID << " have Num of KMERs:  " << cntans << " . VPFamily size = " << VPFamily.size() << "\n\n";
 }
 
-void solveFamily(int Family, int id, vector<IISS> &vectorFamilyList, ofstream &foutF, ofstream &foutD) {
+void solveFamily(int familyTID, vector<IISS> &vectorFamilyList, ofstream &foutF, ofstream &foutD) {
     map<int, int> mapGenus;
     map<int, int> freqGenus;
-    vector<II> Vtmp;
+    vector<II> filesInGenus;
     vector<IIS> vectorGenus[20000];
     int cntGenus = 0, idGenus[20000];
     VPFamily.clear(); VPFamily.shrink_to_fit();
     HT_Family.init();
 
-    if(Family == 9604) {
+    if (familyTID == 9604) {
         cerr << "Human genome" << endl;
         int valSpecies = vectorFamilyList[0].second.second;
         vector<string> humanFileList;
@@ -429,10 +340,10 @@ void solveFamily(int Family, int id, vector<IISS> &vectorFamilyList, ofstream &f
     }
     /// sorting vectorGenus according to the size
     for (auto i : freqGenus) {
-        Vtmp.push_back(II(i.second, i.first));
+        filesInGenus.push_back(II(i.second, i.first));
     }
-    sort(Vtmp.begin(), Vtmp.end(), greater<II> ());
-    for (auto i : Vtmp) {
+    sort(filesInGenus.begin(), filesInGenus.end(), greater<II> ());
+    for (auto i : filesInGenus) {
         int valGenus = i.second;
         mapGenus[valGenus] = ++cntGenus;
         idGenus[cntGenus] = valGenus;
@@ -448,22 +359,25 @@ void solveFamily(int Family, int id, vector<IISS> &vectorFamilyList, ofstream &f
     int limit = min(LIMITgenus, cntGenus);
     FOR (i,1,limit) {
         if(PRINTLOG)
-            cerr << Vtmp[i-1].second << " GENUS have  " << Vtmp[i-1].first  << endl;
-        solveGenus(Family, idGenus[i], i, vectorGenus[i], foutF, foutD);
+            cerr << filesInGenus[i-1].second << " GENUS have  " << filesInGenus[i-1].first  << endl;
+        solveGenus(familyTID, idGenus[i], i, vectorGenus[i], foutF, foutD);
     }
 
+
+    /// Insert LIMITgenus kmer into HT_Family
     for (auto i : VPFamily) {
         HT_Family.insert(i);
     }
     HT_Family.sortData();
+
     FOR (i,limit+1,cntGenus) {
         if(PRINTLOG)
-            cerr << Vtmp[i-1].second << " GENUS have  " << Vtmp[i-1].first << endl;
-        solveGenus(Family, idGenus[i], i, vectorGenus[i], foutF, foutD);
+            cerr << filesInGenus[i-1].second << " GENUS have  " << filesInGenus[i-1].first << endl;
+        solveGenus(familyTID, idGenus[i], i, vectorGenus[i], foutF, foutD);
     }
 
     if(PRINTLOG) {
-        cerr << "FAMILY = " << Family << " have " << vectorFamilyList.size() << endl;
+        cerr << "FAMILY = " << familyTID << " have " << vectorFamilyList.size() << endl;
         cerr << "************************************************************\n\n";
     }
 }
@@ -518,11 +432,16 @@ int main(int argc, char **argv) {
         }
     }
 
-    DEBUG(maxx);
-    DEBUG(RANGE);
+    if (RANGE == 5) cerr << "Program selects X = 20%" << endl;
+    else if (RANGE == 7) cerr << "Program selects X = 15%" << endl;
+    else if (RANGE == 10) cerr << "Program selects X = 10%" << endl;
+    else if (RANGE == 20) cerr << "Program selects X = 5%" << endl;
+    cerr << endl << maxx << endl;
+
     FOR (i, 1, cntFamily) {
-        solveFamily(idFamily[i], i, vectorFamily[i], foutF, foutD);
+        solveFamily(idFamily[i], vectorFamily[i], foutF, foutD);
     }
+
     DEBUG(sumKMERGenome);
     DEBUG(sumSet);
     DEBUG(sumFinalKMER);
