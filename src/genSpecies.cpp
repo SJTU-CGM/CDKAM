@@ -88,17 +88,19 @@ void usage(){
 }
 
 
-int main(int argc, char **argv) {
-    if(argc != 5) { usage(); exit(1); }
+int main (int argc, char **argv) {
+    if (argc != 5) {
+        usage();
+        exit(1);
+    }
     ifstream fin(argv[1]);
     ifstream fin2(argv[2]);
     ifstream fin3(argv[3]);
 
-    int maxx = 2700000, cnt = 0;
+    /// Read Taxonomy NCBI file
     FOR(i,1,3000000) parent[i] = IIS("",0);
     string t;
     while (getline(fin2, t)) {
-        cnt++;
         vector<string> V = tokenize(t);
         FOR(i,0,2)
             V[i].erase(V[i].size()-1,1);
@@ -110,10 +112,11 @@ int main(int argc, char **argv) {
     }
     fin2.close();
 
+    /// Read Premap.txt
     string taxid;
 	while (fin >> taxid) {
-	    vector<string> V = tokenize(taxid); /// CDKAM|1054217|NC_020892.1
-        int strainID = toNum(V[1]);
+	    vector<string> V = tokenize(taxid); /// CDKAM|GCF_000091045.1|214684|NC_006670.1
+        int strainID = toNum(V[2]);
         int phylumID = -1, classID = -1, orderID = -1, familyID = -1, genusID = -1, speciesID = strainID;
         int st = strainID;
         while (st != 131567) {
@@ -137,6 +140,7 @@ int main(int argc, char **argv) {
 	}
     fin.close();
 
+    /// Read library.fna and then split it into TaxaID files
     string s, oldFile = "";
     vector<string> Genome;
     vector<IIS> Vlink;
@@ -144,8 +148,8 @@ int main(int argc, char **argv) {
         if (s[0] == '>') {
             if (oldFile.size() > 0) {
                 vector<string> V = tokenize(oldFile);
-                string file = "references/" + V[1] + "|" + V[2] + ".txt";
-                int id = toNum(V[1]);
+                string file = "references/" + V[1] + "|" + V[2] + "|" + V[3] + ".txt";
+                int id = toNum(V[2]);
                 string link = string(argv[4]);
                 link += "/" + file;
 
@@ -168,8 +172,8 @@ int main(int argc, char **argv) {
     /// last genome
     {
                 vector<string> V = tokenize(oldFile);
-                string file = "references/" + V[1] + "|" + V[2] + ".txt";
-                int id = toNum(V[1]);
+                string file = "references/" + V[1] + "|" + V[2] + "|" + V[3] + ".txt";
+                int id = toNum(V[2]);
                 string link = string(argv[4]);
                 link += "/" + file;
 
@@ -184,6 +188,7 @@ int main(int argc, char **argv) {
     }
     fin3.close();
 
+    /// Print library_name.txt, consists of file link and the full taxonomy path
     string output(argv[4]);
     output += ".txt";
     ofstream fout(output.c_str());
@@ -191,7 +196,7 @@ int main(int argc, char **argv) {
     Vlink.erase(unique(Vlink.begin(), Vlink.end()), Vlink.end());
     for (auto i : Vlink) {
         int id = i.second;
-        i.first += "\t" + mapSpecies[id] + "\t" + mapGenus[id] + "\t" + mapFamily[id] + "\t" + mapOrder[id] + "\t" + mapClass[id] + "\t" + mapPhylum[id];
+        i.first += "\t" + toString(id) + "\t" + mapSpecies[id] + "\t" + mapGenus[id] + "\t" + mapFamily[id] + "\t" + mapOrder[id] + "\t" + mapClass[id] + "\t" + mapPhylum[id];
         fout << i.first << "\n";
     }
     fout.close();
