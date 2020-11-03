@@ -7,11 +7,9 @@
 # Function: Collecting kmers at species and genus rank level
 */
 
-#include <bits/stdc++.h>
 #include "helpers.h"
 #define FOR(i,a,b) for(size_t i=a;i<=b;i++)
 #define FO(i,a,b) for(size_t i=a;i<b;i++)
-using namespace std;
 
 #define PRINTLOG 1
 
@@ -23,7 +21,7 @@ const uint64_t LEFT31 = 4611686018427387903ULL;
 /// RANGE = 20, X = 5%
 
 
-class HashTable {
+class HashTable64 {
 private:
     vector<uint64_t> mTable[TWO22+1], Vtmp;
 
@@ -78,7 +76,7 @@ LL sumSet = 0, sumFinalKMER = 0, sumKMERGenome = 0;
 set<uint64_t> S[TWO22+1];
 vector<uint64_t> VGkmer, VPFamily;
 vector<uint32_t> Vtaxa;
-HashTable HT_Family, HT_Genus;
+HashTable64 HT_Family, HT_Genus;
 
 
 void convertUpperCase(string &s) {
@@ -92,7 +90,7 @@ void convertUpperCase(string &s) {
 void insertKmerIntoTWO22Sets(uint64_t &tmp, const uint32_t speciesTID, const int flag) {
     if(tmp == 0) return;
 
-    uint64_t tmp2 = reverseMask3(tmp, KMER);
+    uint64_t tmp2 = reverseMask(tmp, KMER);
     if(tmp > tmp2) tmp = tmp2;
 
     uint64_t setID, val;
@@ -145,6 +143,7 @@ void solveTaxa(const uint32_t speciesTID, const int stepID, vector<IIS> &vectorS
         }
         fin2.close();
     }
+
     sumKMERGenome += numKmerOfSpecies;
     if (PRINTLOG)
         cerr << "step = " << stepID  << " SpeciesID = " << speciesTID << "  :  " << numKmerOfSpecies << "  " << VGkmer.size() << endl;

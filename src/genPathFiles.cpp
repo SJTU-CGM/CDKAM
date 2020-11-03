@@ -7,9 +7,6 @@
 # Function: Generating each species's genome from .fna file
 */
 
-#include <algorithm>
-#include <vector>
-#include <fstream>
 #include "helpers.h"
 
 #define maxn 3000005

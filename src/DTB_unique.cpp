@@ -7,18 +7,17 @@
 # Function: Removing kmers that are shared by at least two genomes
 */
 
-#include <bits/stdc++.h>
 #include "helpers.h"
 
 const int KMER = 32, PREFIX = 14, MAXBIT = 1<<(2*PREFIX);
 uint64_t RIGHT16 = 4294967295;
 
-class HashTable {
+class HashTableII32 {
 public:
     vector<II32> *mTable, Vtmp;
 
-    HashTable(){};
-    ~HashTable(){
+    HashTableII32(){};
+    ~HashTableII32(){
         delete[] mTable;
     };
 
@@ -61,7 +60,7 @@ public:
         DEBUG(cntRemove);
     }
 };
-HashTable HT;
+HashTableII32 HT;
 
 
 void usage() {

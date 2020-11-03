@@ -1,5 +1,10 @@
 #include <iostream>
 #include <cstring>
+#include <algorithm>
+#include <vector>
+#include <map>
+#include <set>
+#include <fstream>
 #include <sys/time.h>
 #include <sys/resource.h>
 #define DEBUG(a) {cerr << #a << ": " << (a) << endl; fflush(stderr); }
@@ -84,7 +89,7 @@ uint64_t toNumDNA(string &s, int a, int len) {
     return ans;
 }
 
-uint64_t reverseMask3(uint64_t _ikmer, int m_k) {
+uint64_t reverseMask(uint64_t _ikmer, int m_k) {
     uint64_t _ikmerR = _ikmer;
     // The following 6 lines come from Jellyfish source code
     _ikmerR = ((_ikmerR >> 2)  & 0x3333333333333333UL) | ((_ikmerR & 0x3333333333333333UL) << 2);
