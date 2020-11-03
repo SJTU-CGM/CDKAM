@@ -9,61 +9,9 @@
 
 
 #include <omp.h>
+#include <queue>
 #include "seqreader.h"
-#define LL long long
-#define ULL unsigned long long
-#define fi first
-#define se second
-#define FOR(i,a,b) for(size_t i=a;i<=b;i++)
-#define FO(i,a,b) for(size_t i=a;i<b;i++)
-#define DEBUG(a) {cerr << #a << ": " << (a) << endl; fflush(stderr); }
-
-
-template<class T> string i2s(T x) {ostringstream o; o << x; return o.str();}
-template<class T> int getbit(T s, int i) { return (s >> i) & 1; }
-template<class T> T onbit(T s, int i) { return s | (T(1) << i); }
-template<class T> T offbit(T s, int i) { return s & (~(T(1) << i)); }
-template<class T> int cntbit(T s) { return __builtin_popcount(s);}
-typedef pair<int, int> II;
-
-
-/***************************************************************/
-#include <sys/time.h>
-#include <sys/resource.h>
-inline void printRam() {
-    struct rusage ru;
-    getrusage(RUSAGE_SELF, &ru);
-    cerr << "Max ram (in kilobytes): " << ru.ru_maxrss << endl;
-}
-
-namespace Time{
-    double start_time, time_limit;
-    static double last_call = 0;
-    int get_time_calls = 0;
-
-    double get_time() {
-        get_time_calls++;
-        timeval tv;
-        gettimeofday(&tv, 0);
-        return tv.tv_sec+tv.tv_usec*1e-6;
-    }
-
-    void print_time(string s) {
-#ifdef LOCAL
-    double x = get_time();
-    fprintf(stderr,"%s cur=%.6lf lap=%.6lf\n",s.c_str(),x,x-last_call);
-    last_call = x;
-#endif
-    }
-
-    void init_time() {
-        start_time = get_time();
-        last_call = start_time;
-    }
-}
-/******************************************************************/
-
-
+#include "helpers.h"
 
 /*************PARAMETER******************/
 const int KMER = 32, PREFIX = 14, SHIFT = 2*PREFIX, SHIFTLEFT = 64 - (2*PREFIX);
@@ -103,7 +51,7 @@ public:
         for (int i = 1; i <= m; i++) {
             int down = max(i-2,1), up = min(i+2, n);
             for (int j = down; j <= up; j++) {
-                if(getbit(u,(i-1)*2) != getbit(v,(j-1)*2) || getbit(u,(i-1)*2+1) != getbit(v,(j-1)*2+1)){
+                if(getbit(u,(i-1)*2) != getbit(v,(j-1)*2) || getbit(u,(i-1)*2+1) != getbit(v,(j-1)*2+1)) {
                     dp[i][j] = 1+ min(dp[i-1][j],
                                    min(dp[i][j-1], dp[i-1][j-1]));
                 }
@@ -115,9 +63,9 @@ public:
     }
 
     void init(uint64_t sz) {
-        FOR (k,1,6) {
+        for (int k = 1; k <= 6; ++k) {
             MIDDLE[k] = 0;
-            FO (i,10,16) if(i != 9+k) {
+            for (int i = 10; i <= 15; ++i) if(i != 9+k) {
                 MIDDLE[k] = onbit(MIDDLE[k], 2*i);
                 MIDDLE[k] = onbit(MIDDLE[k], 2*i+1);
             }
@@ -130,7 +78,7 @@ public:
     }
 
     int check_approximate(uint32_t id, uint32_t val) {
-        FO (i, stID[id], stID[id+1]) {
+        for (size_t i = stID[id]; i < stID[id+1]; ++i) {
             if ((suffix[i] & MIDDLE[1]) == (val & MIDDLE[1]) ||
                 (suffix[i] & MIDDLE[2]) == (val & MIDDLE[2]) ||
                 (suffix[i] & MIDDLE[3]) == (val & MIDDLE[3]) ||
@@ -157,7 +105,7 @@ public:
         DEBUG(cntDB);
         init(cntDB+1);
 
-        FO (id,0,MAXBIT) {
+        for (size_t id = 0; id < MAXBIT; ++id) {
             uint32_t num;
             ifsSize.read((char *) &num, sizeof(num));
             stID[id] = cntHash+1;
@@ -166,7 +114,7 @@ public:
             memset(taxa, 0, sizeof(taxa));
             ifsSuffix.read((char *) &val, sizeof(val));
             ifsTaxo.read((char *) &taxa, sizeof(taxa));
-            FO (i,0,num) {
+            for (uint32_t i = 0; i < num; ++i) {
                 ++cntHash;
                 suffix[cntHash] = val[i];
                 taxoID[cntHash] = taxa[i];
@@ -177,37 +125,7 @@ public:
     }
 
 };
-// Variable
 HashTable HT;
-
-inline int get_code(char c) {
-    if (c == 'A') return 0;
-    if (c == 'C') return 1;
-    if (c == 'G') return 2;
-    if (c == 'T') return 3;
-    return 0;
-}
-
-uint64_t toNumDNA(string &s, int a, int len) {
-    uint64_t ans = 0;
-    for (int i = a; i < a+len; i++) {
-        ans <<= 2;
-        ans |= get_code(s[i]);
-    }
-    return ans;
-}
-
-inline uint64_t reverseMask(uint64_t _ikmer, int m_k) {
-    uint64_t _ikmerR = _ikmer;
-    // The following 6 lines come from Jellyfish source code
-    _ikmerR = ((_ikmerR >> 2)  & 0x3333333333333333UL) | ((_ikmerR & 0x3333333333333333UL) << 2);
-    _ikmerR = ((_ikmerR >> 4)  & 0x0F0F0F0F0F0F0F0FUL) | ((_ikmerR & 0x0F0F0F0F0F0F0F0FUL) << 4);
-    _ikmerR = ((_ikmerR >> 8)  & 0x00FF00FF00FF00FFUL) | ((_ikmerR & 0x00FF00FF00FF00FFUL) << 8);
-    _ikmerR = ((_ikmerR >> 16) & 0x0000FFFF0000FFFFUL) | ((_ikmerR & 0x0000FFFF0000FFFFUL) << 16);
-    _ikmerR = ( _ikmerR >> 32                        ) | (_ikmerR                        << 32);
-    _ikmerR = (((uint64_t)-1) - _ikmerR) >> (64 - (m_k << 1));
-    return _ikmerR;
-}
 
 int ClassifySequence(string &s, HashTable &HT) {
     int lenSeq = s.size();
@@ -222,7 +140,7 @@ int ClassifySequence(string &s, HashTable &HT) {
     Vid.push_back(tmp >> SHIFTLEFT);
     Vval.push_back(tmp & RIGHT16);
 
-    FO (i,1,lenSeq-KMER) {
+    for (size_t i = 1; i < lenSeq-KMER; ++i) {
         tt = ((tt & RIGHT31) << 2) | get_code(s[i+31]);
         tmp = reverseMask(tt, KMER);
         if (tmp > tt)
@@ -231,7 +149,7 @@ int ClassifySequence(string &s, HashTable &HT) {
         Vval.push_back(tmp & RIGHT16);
     }
 
-    FO (i,0,Vid.size()) {
+    for (size_t i = 0; i < Vid.size(); ++i) {
         int result_match = HT.check_approximate(Vid[i], Vval[i]);
         if (result_match > 0)
             ans.push_back(result_match);
@@ -250,7 +168,7 @@ int ClassifySequence(string &s, HashTable &HT) {
     sort(VGenus.begin(), VGenus.end());
     VGenus.push_back(0);
     int finalGenus = 0, freqGenus = 1, cntGenus = 0, maxx = 0;
-    FO (i,0,VGenus.size()-1) {
+    for (size_t i = 0; i < VGenus.size()-1; ++i) {
         if (VGenus[i] == VGenus[i+1])
             freqGenus++;
         else {
@@ -277,7 +195,7 @@ int ClassifySequence(string &s, HashTable &HT) {
         VSpecies.push_back(0);
         maxx = 0;
         finalTaxa = finalGenus;
-        FO (i,0,VSpecies.size()-1) {
+        for (size_t i = 0; i < VSpecies.size()-1; ++i) {
             if (VSpecies[i] == VSpecies[i+1])
                 cntTaxa++;
             else{
@@ -292,7 +210,7 @@ int ClassifySequence(string &s, HashTable &HT) {
     return finalTaxa;
 }
 
-void usage(){
+void usage() {
     cerr << "./CDKAM.sh DBname input output --fasta\n Or \n";
     cerr << "./CDKAM.sh DBname input output --fasta nthread N\n";
 }
@@ -432,7 +350,6 @@ int main (int argc, char **argv) {
     DEBUG(test_time);
     finReads.close();
     fout.close();
-
 
     return 0;
 }

@@ -11,7 +11,9 @@
 #ifndef SEQREADER_H_
 #define SEQREADER_H_
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cstring>
+#include <sstream>
 using namespace std;
 
 class Reader{

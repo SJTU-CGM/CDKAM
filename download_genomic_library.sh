@@ -67,6 +67,7 @@ case $library_name in
 		
 		echo "Step 3/4: Masking low-complexity regions..."
 		if [ ! -e "$library_file.masked" ] && [ "$library_name" != "human" ]; then
+		  echo "Masking"
 		  $MASKER -in $library_file -outfmt fasta | sed -e '/^>/!s/[a-z]/x/g' > "$library_file.tmp"
 		  mv "$library_file.tmp" "$library_file"
 		  touch "$library_file.masked"
@@ -78,7 +79,7 @@ case $library_name in
 		cd ..
 		cd ..
 		echo "Step 4/4: Creating full taxonomy..."
-		./src/genSpecies $LIBRARY_DIR/$library_name/premap.txt $LIBRARY_DIR/taxonomy/nodes.dmp $LIBRARY_DIR/$library_name/$library_file $LIBRARY_DIR/$library_name
+		./genPathFiles $LIBRARY_DIR/$library_name/premap.txt $LIBRARY_DIR/taxonomy/nodes.dmp $LIBRARY_DIR/$library_name/$library_file $LIBRARY_DIR/$library_name
 		cd $LIBRARY_DIR
 		#cat $library_name.txt >> targets.txt
 		rm $library_name/$library_file

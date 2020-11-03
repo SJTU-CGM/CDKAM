@@ -37,7 +37,7 @@ while (<>) {
   next if /^#/;
   chomp;
   my @fields = split /\t/;
-  my ($taxid, $asm_level, $ftp_path) = @fields[5, 11, 19];
+  my ($assembly, $taxid, $asm_level, $ftp_path) = @fields[0, 5, 11, 19];
   # Possible TODO - make the list here configurable by user-supplied flags
   next unless grep {$asm_level eq $_} ("Complete Genome", "Chromosome");
 
@@ -47,7 +47,8 @@ while (<>) {
   if (! ($full_path =~ s#^ftp://${qm_server}${qm_server_path}/##)) {
     die "$PROG: unexpected FTP path (new server?) for $ftp_path\n";
   }
-  $manifest{$full_path} = $taxid;
+  my $fullID = basename($assembly) . "|" . basename($taxid);
+  $manifest{$full_path} = $fullID;
 }
 
 open MANIFEST, ">", "manifest.txt"
