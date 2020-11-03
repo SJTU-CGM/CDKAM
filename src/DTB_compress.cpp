@@ -8,10 +8,7 @@
 */
 
 #include "helpers.h"
-#define FOR(i,a,b) for(size_t i=a;i<=b;i++)
-#define FO(i,a,b) for(size_t i=a;i<b;i++)
-
-#define PRINTLOG 1
+#define PRINTLOG 0
 
 const int KMER = 32, TWO22 = 4194304,  BIT11 = 4194303, RANGE = 7, LIMITgenus = 3;
 const uint64_t LEFT31 = 4611686018427387903ULL;
@@ -26,7 +23,8 @@ private:
     vector<uint64_t> mTable[TWO22+1], Vtmp;
 
 public:
-    HashTable(){};
+    HashTable64(){};
+    ~HashTable64(){};
 
     void init() {
         for (size_t i = 0; i < TWO22; ++i) {

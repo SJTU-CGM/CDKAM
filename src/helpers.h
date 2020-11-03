@@ -89,7 +89,7 @@ uint64_t toNumDNA(string &s, int a, int len) {
     return ans;
 }
 
-uint64_t reverseMask(uint64_t _ikmer, int m_k) {
+inline uint64_t reverseMask(uint64_t _ikmer, int m_k) {
     uint64_t _ikmerR = _ikmer;
     // The following 6 lines come from Jellyfish source code
     _ikmerR = ((_ikmerR >> 2)  & 0x3333333333333333UL) | ((_ikmerR & 0x3333333333333333UL) << 2);
