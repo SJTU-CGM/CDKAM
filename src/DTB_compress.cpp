@@ -9,6 +9,7 @@
 
 #include "helpers.h"
 #define PRINTLOG 0
+#define FOR(i,a,b) for(int i=a;i<=b;i++)
 
 const int KMER = 32, TWO22 = 4194304,  BIT11 = 4194303, RANGE = 7, LIMITgenus = 3;
 const uint64_t LEFT31 = 4611686018427387903ULL;
