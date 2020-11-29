@@ -22,7 +22,7 @@ typedef pair<string, int> IIS;
 #define maxn 3000005
 // maxn = the maximum number of species in nodes.dmp
 
-vector<int> adj[];
+vector<int> adj[maxn];
 int testSpecies[maxn], testGenus[maxn], freq[maxn];
 int nameFamily[maxn], nameGenus[maxn];
 string MName[maxn];
