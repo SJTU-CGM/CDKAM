@@ -404,7 +404,7 @@ int main(int argc, char **argv) {
     while (fin >> file) {
         step++;
         /// NEW: 7 levels
-        FOR (i, 1, 7) fin >> t[i];
+        for (int i = 1; i <= 7; i++) fin >> t[i];
         if(t[1] != -1 ) {
             int orderID, familyID, genusID, speciesID;
 
@@ -435,7 +435,7 @@ int main(int argc, char **argv) {
     else if (RANGE == 20) cerr << "Program selects X = 5%" << endl;
     cerr << endl << maxx << endl;
 
-    FOR (i, 1, cntFamily) {
+    for (int i = 1; i <= cntFamily; i++) {
         solveFamily(idFamily[i], vectorFamily[i], foutF, foutD);
     }
 
