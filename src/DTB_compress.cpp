@@ -9,7 +9,6 @@
 
 #include "helpers.h"
 #define PRINTLOG 0
-#define FOR(i,a,b) for(int i=a;i<=b;i++)
 
 const int KMER = 32, TWO22 = 4194304,  BIT11 = 4194303, RANGE = 7, LIMITgenus = 3;
 const uint64_t LEFT31 = 4611686018427387903ULL;
@@ -184,13 +183,13 @@ void solveGenus(const int familyTID, const int genusTID, const int stepID, vecto
 
 
     /** FoutF print */
-    FOR (i,1,cntTaxa) {
+    for (int i = 1; i <= cntTaxa; i++) {
         foutF << familyTID << " " << genusTID  << " " << iVtaxa[i] << endl;
     }
     /** END */
 
 
-    FOR (i,1,cntTaxa) {
+    for (int i = 1; i <= cntTaxa; i++) {
         if (isFamilyFlag) solveTaxa(iVtaxa[i], i, vectorSpecies[i], 1);
         else              solveTaxa(iVtaxa[i], i, vectorSpecies[i], 0);
     }
@@ -355,7 +354,7 @@ void solveFamily(int familyTID, vector<IISS> &vectorFamilyList, ofstream &foutF,
     }
 
     int limit = min(LIMITgenus, cntGenus);
-    FOR (i,1,limit) {
+    for (int i = 1; i <= limit; i++) {
         if(PRINTLOG)
             cerr << filesInGenus[i-1].second << " GENUS have  " << filesInGenus[i-1].first  << endl;
         solveGenus(familyTID, idGenus[i], i, vectorGenus[i], foutF, foutD);
@@ -368,7 +367,7 @@ void solveFamily(int familyTID, vector<IISS> &vectorFamilyList, ofstream &foutF,
     }
     HT_Family.sortData();
 
-    FOR (i,limit+1,cntGenus) {
+    for (int i = limit+1; i <= cntGenus; i++) {
         if(PRINTLOG)
             cerr << filesInGenus[i-1].second << " GENUS have  " << filesInGenus[i-1].first << endl;
         solveGenus(familyTID, idGenus[i], i, vectorGenus[i], foutF, foutD);

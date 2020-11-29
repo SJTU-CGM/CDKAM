@@ -107,6 +107,12 @@ Example:
 (AS) indicates that the read is assigned to a taxonomy ID at Species level\
 (AG) indicates that the read is assigned to a taxonomy ID at Genus level
 
+**7) Testing tool**
+
+Compare the classification results between CDKAM and Kraken2. The database contains archaea, viral and fungi.
+
+https://github.com/buikiendp/TestCDKAM
+
 
 
 **Contact:**

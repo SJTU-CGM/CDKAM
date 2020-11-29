@@ -113,17 +113,16 @@ int main(int argc, char **argv) {
     DEBUG(HTsize);
     foutSize.write((char *) &HTsize, sizeof(HTsize));
 
-	for (size_t i = 0; i < MAXBIT; ++i) {
-	    uint32_t sz = HT.mTable[i].size();
-	    foutSize.write((char *) &sz, sizeof(sz));
+    for (size_t i = 0; i < MAXBIT; ++i) {
+        uint32_t sz = HT.mTable[i].size();
+        foutSize.write((char *) &sz, sizeof(sz));
 	    if (sz == 0)
             cntNum++;
         for (auto u : HT.mTable[i]) {
-            //cout << u.fi << " " << u.se << "\n";
             foutSuffix.write((char *) &u.first, sizeof(u.first));
             foutTaxo.write((char *) &u.second, sizeof(u.second));
         }
-	}
+    }
     foutSize.close();
     foutSuffix.close();
     foutTaxo.close();
