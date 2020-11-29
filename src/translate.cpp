@@ -22,7 +22,6 @@ typedef pair<string, int> IIS;
 
 
 
-vector<II> V;
 vector<int> adj[3000005];
 int testSpecies[3000005], testGenus[3000005], freq[3000005];
 int nameFamily[3000005], nameGenus[3000005];
@@ -72,9 +71,9 @@ int main(int argc, char **argv) {
     string namesFile = DTB + "/taxonomy/names.dmp";
     string nodesFile = DTB + "/taxonomy/nodes.dmp";
     ifstream finNames(namesFile);
-	ifstream finNodes(nodesFile);
-	ifstream fin(argv[2]);
-	ofstream fout(argv[3]);
+    ifstream finNodes(nodesFile);
+    ifstream fin(argv[2]);
+    ofstream fout(argv[3]);
 
     string s;
     while(getline(finNames, s)) {
@@ -111,8 +110,8 @@ int main(int argc, char **argv) {
     DEBUG("TRANSLATION");
     string genID, id, seq;
     int stt, taxa, len;
-	int step = 0, cntU = 0;
-	while (fin >> stt >> len >> taxa) {
+    int step = 0, cntU = 0;
+    while (fin >> stt >> len >> taxa) {
         testSpecies[++step] = taxa;
         testGenus[step] = findGenus(taxa);
         int phylumID = -1, classID = -1, orderID = -1, familyID = -1, genusID = -1, speciesID = -1;
